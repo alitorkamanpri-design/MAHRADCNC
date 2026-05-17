@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="مانلی شاپ - مرجع رسمی محصولات بهداشتی و آرایشی با تضمین اصالت و بهترین قیمت">
+<meta name="theme-color" content="#2C9B8A">
+<title>مانلی شاپ | مرجع رسمی محصولات بهداشتی و آرایشی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://c7n.ir/fonts/sahel/load.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar" aria-label="اطلاعیه‌ها">
+  <div class="topbar-inner">
+    <span>🏭 تأمین مستقیم از کارخانه</span><span class="sep">|</span>
+    <span>✅ تضمین ۱۰۰٪ اصالت کالا</span><span class="sep">|</span>
+    <span>🚚 ارسال رایگان بالای ۳۵۰ هزار تومان</span><span class="sep">|</span>
+    <span>🔄 ۷ روز ضمانت بازگشت وجه</span><span class="sep">|</span>
+    <!-- duplicate for seamless loop -->
+    <span>🏭 تأمین مستقیم از کارخانه</span><span class="sep">|</span>
+    <span>✅ تضمین ۱۰۰٪ اصالت کالا</span><span class="sep">|</span>
+    <span>🚚 ارسال رایگان بالای ۳۵۰ هزار تومان</span><span class="sep">|</span>
+    <span>🔄 ۷ روز ضمانت بازگشت وجه</span><span class="sep">|</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="site-header">
+  <a class="logo" href="#" aria-label="مانلی شاپ - صفحه اصلی">
+    <div class="logo-icon" aria-hidden="true">💄</div>
+    <div class="logo-text">
+      <strong>مانلی شاپ</strong>
+      <small>مرجع رسمی بهداشتی و آرایشی</small>
+    </div>
+  </a>
+
+  <div class="search-wrap" role="search">
+    <input id="search-input" type="search" placeholder="جستجو در محصولات، برندها..." autocomplete="off" aria-label="جستجو">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+    <div class="search-suggestions" id="search-sugg" role="listbox" aria-label="پیشنهادهای جستجو"></div>
+  </div>
+
+  <div class="header-actions">
+    <button class="btn-icon" title="علاقه‌مندی‌ها" aria-label="لیست علاقه‌مندی‌ها">🤍</button>
+    <button class="btn-icon" id="cart-btn" title="سبد خرید" aria-label="سبد خرید" aria-expanded="false">
+      🛒
+      <span class="badge" id="cart-badge" aria-live="polite">0</span>
+    </button>
+    <a href="dasbord.html" class="btn-login" aria-label="ورود یا ثبت‌نام">
+      <span>👤</span><span>ورود / ثبت‌نام</span>
+    </a>
+    <button class="btn-icon btn-menu" id="menu-btn" aria-label="منو" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MAIN NAV -->
+<nav class="main-nav" role="navigation" aria-label="ناوبری اصلی">
+  <div class="nav-item active" tabindex="0">🏠 خانه</div>
+  <div class="nav-item" tabindex="0">مراقبت پوست</div>
+  <div class="nav-item" tabindex="0">مراقبت مو</div>
+  <div class="nav-item" tabindex="0">آرایشی</div>
+  <div class="nav-item" tabindex="0">بهداشتی</div>
+  <div class="nav-item" tabindex="0">عطر و ادکلن</div>
+  <div class="nav-item" tabindex="0">برندها</div>
+  <div class="nav-item" tabindex="0">پیشنهاد ویژه</div>
+  <div class="nav-vip" tabindex="0" role="link">👑 کلاب VIP</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero-wrap reveal">
+  <div class="hero-card hero-economic">
+    <div class="hero-badge">🌿 بهترین قیمت</div>
+    <h1 class="hero-title">مراقبت روزانه<br>اقتصادی</h1>
+    <p class="hero-sub">کیفیت بالا با بهترین قیمت<br>مستقیم از کارخانه به دست شما</p>
+    <button class="btn-hero btn-teal">مشاهده محصولات ←</button>
+    <div class="hero-deco" aria-hidden="true">🧴</div>
+  </div>
+  <div class="hero-card hero-vip">
+    <div class="hero-badge">✨ خط درمانی</div>
+    <h1 class="hero-title">مراقبت تخصصی<br>و لوکس (VIP)</h1>
+    <p class="hero-sub">فرمول‌های پیشرفته درمانی<br>مخصوص پوست و موی شما</p>
+    <button class="btn-hero btn-rose">مشاهده محصولات ←</button>
+    <div class="hero-deco" aria-hidden="true">💎</div>
+  </div>
+</div>
+
+<!-- TRUST SIGNALS -->
+<section class="trust-section" aria-label="نشان‌های اعتماد">
+  <div class="trust-grid stagger">
+    <div class="trust-card">
+      <div class="trust-icon ti-1" aria-hidden="true">🏭</div>
+      <div class="trust-info"><strong>تأمین مستقیم از کارخانه</strong><span>حذف واسطه‌ها، قیمت بهتر</span></div>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon ti-2" aria-hidden="true">✅</div>
+      <div class="trust-info"><strong>تضمین اصالت کالا</strong><span>۱۰۰٪ اصل با ضمانت کتبی</span></div>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon ti-3" aria-hidden="true">🏛️</div>
+      <div class="trust-info"><strong>تأییدیه وزارت بهداشت</strong><span>با مجوز رسمی و معتبر</span></div>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon ti-4" aria-hidden="true">↩️</div>
+      <div class="trust-info"><strong>ضمانت بازگشت وجه</strong><span>تا ۷ روز بدون سوال</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories-section reveal">
+  <div class="sec-head">
+    <h2 class="sec-title">دسته‌بندی محصولات</h2>
+    <a href="#" class="see-all">مشاهده همه →</a>
+  </div>
+  <div class="cat-grid stagger">
+    <div class="cat-card" tabindex="0" role="link" aria-label="مراقبت پوست">
+      <div class="cat-img ci-1">🌿</div><div class="cat-name">مراقبت پوست</div>
+    </div>
+    <div class="cat-card" tabindex="0" role="link" aria-label="مراقبت مو">
+      <div class="cat-img ci-2">💆</div><div class="cat-name">مراقبت مو</div>
+    </div>
+    <div class="cat-card" tabindex="0" role="link" aria-label="آرایشی">
+      <div class="cat-img ci-3">💄</div><div class="cat-name">آرایشی</div>
+    </div>
+    <div class="cat-card" tabindex="0" role="link" aria-label="بهداشتی">
+      <div class="cat-img ci-4">🪥</div><div class="cat-name">بهداشتی</div>
+    </div>
+    <div class="cat-card" tabindex="0" role="link" aria-label="عطر و ادکلن">
+      <div class="cat-img ci-5">🌸</div><div class="cat-name">عطر و ادکلن</div>
+    </div>
+    <div class="cat-card" tabindex="0" role="link" aria-label="محصولات خاص">
+      <div class="cat-img ci-6">⭐</div><div class="cat-name">محصولات خاص</div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL OFFERS -->
+<section class="specials-section reveal">
+  <div class="specials-head">
+    <div class="specials-title">🔥 پیشنهادهای ویژه امروز</div>
+    <div class="countdown" aria-label="زمان باقی‌مانده تا پایان تخفیف">
+      <span>پایان تخفیف:</span>
+      <div class="cd-box" id="cd-h">--</div>
+      <span aria-hidden="true">:</span>
+      <div class="cd-box" id="cd-m">--</div>
+      <span aria-hidden="true">:</span>
+      <div class="cd-box" id="cd-s">--</div>
+    </div>
+  </div>
+  <div class="specials-body">
+    <div class="specials-grid stagger" id="specials-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- FILTER + POPULAR PRODUCTS -->
+<section class="products-section reveal">
+  <div class="sec-head">
+    <h2 class="sec-title">محبوب‌ترین محصولات</h2>
+    <a href="#" class="see-all">مشاهده همه →</a>
+  </div>
+  <div class="filter-tabs" role="group" aria-label="فیلتر نوع پوست">
+    <button class="ftab active" data-filter="all">همه</button>
+    <button class="ftab" data-filter="oily">پوست چرب</button>
+    <button class="ftab" data-filter="dry">پوست خشک</button>
+    <button class="ftab" data-filter="combo">پوست مختلط</button>
+    <button class="ftab" data-filter="acne">ضد جوش</button>
+    <button class="ftab" data-filter="hydrating">آبرسان</button>
+    <button class="ftab" data-filter="hair">ضد ریزش</button>
+  </div>
+  <div class="products-grid stagger" id="popular-grid">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- VIP BANNER -->
+<div class="vip-banner reveal">
+  <div class="vip-inner">
+    <div class="vip-content">
+      <div class="vip-tag">👑 کلاب مشتریان ویژه</div>
+      <h2 class="vip-title">عضویت در باشگاه VIP<br>مانلی شاپ</h2>
+      <p class="vip-desc">امتیاز جمع کنید، تخفیف بگیرید و از مزایای ویژه بهره‌مند شوید. دسترسی اول به محصولات جدید و مشاوره رایگان پوست.</p>
+      <div class="vip-perks">
+        <span class="vip-perk">تخفیف انحصاری</span>
+        <span class="vip-perk">اولویت ارسال</span>
+        <span class="vip-perk">مشاوره رایگان</span>
+      </div>
+      <button class="btn-vip">👑 عضویت رایگان</button>
+    </div>
+    <div class="vip-deco" aria-hidden="true">✨</div>
+  </div>
+</div>
+
+<!-- BRANDS -->
+<section class="brands-section reveal">
+  <div class="sec-head">
+    <h2 class="sec-title">برندهای معتبر</h2>
+    <a href="#" class="see-all">مشاهده همه →</a>
+  </div>
+  <div class="brands-grid stagger">
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#2C9B8A,#4DBDAD)">M</div><div class="brand-name">مانلی پرو</div><div class="brand-count">۱۲۴ محصول</div></a>
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#E8637A,#F5A0B0)">G</div><div class="brand-name">گلدن اسکین</div><div class="brand-count">۸۷ محصول</div></a>
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#C9A84C,#F0D080)">V</div><div class="brand-name">ویوا</div><div class="brand-count">۵۶ محصول</div></a>
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">N</div><div class="brand-name">نیچرال اسنس</div><div class="brand-count">۹۳ محصول</div></a>
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#059669,#34D399)">P</div><div class="brand-name">پیوریتی</div><div class="brand-count">۴۲ محصول</div></a>
+    <a href="#" class="brand-card"><div class="brand-logo" style="background:linear-gradient(135deg,#DC2626,#F87171)">R</div><div class="brand-name">رزبیوتی</div><div class="brand-count">۶۸ محصول</div></a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section reveal">
+  <div class="sec-head">
+    <h2 class="sec-title">نظرات مشتریان</h2>
+    <a href="#" class="see-all">همه نظرات →</a>
+  </div>
+  <div class="reviews-grid stagger">
+    <div class="review-card">
+      <div class="rev-top">
+        <div class="rev-avatar ra-1">👩</div>
+        <div class="rev-meta"><strong>سارا محمدی</strong><span>مشتری تأیید شده</span></div>
+      </div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">سرم ویتامین C رو چند ماهه استفاده می‌کنم و واقعاً پوستم روشن‌تر شده. خوشحالم که از مانلی شاپ خریدم چون مطمئنم اصله.</p>
+      <div class="rev-product">🧴 سرم ویتامین C</div>
+    </div>
+    <div class="review-card">
+      <div class="rev-top">
+        <div class="rev-avatar ra-2">👨</div>
+        <div class="rev-meta"><strong>علی رضایی</strong><span>مشتری تأیید شده</span></div>
+      </div>
+      <div class="rev-stars">★★★★☆</div>
+      <p class="rev-text">شامپو ضد ریزش عالیه. ریزش موهام به شدت کم شده. بسته‌بندی هم خیلی مناسب بود. قطعاً دوباره خرید می‌کنم.</p>
+      <div class="rev-product">🧼 شامپو ضد ریزش</div>
+    </div>
+    <div class="review-card">
+      <div class="rev-top">
+        <div class="rev-avatar ra-3">👩</div>
+        <div class="rev-meta"><strong>مریم حسینی</strong><span>مشتری تأیید شده</span></div>
+      </div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">کرم ضد آفتاب بدون چربی و مناسب پوست چربه. با اطمینان کامل خرید کردم. سایت هم خیلی راحته و سریع تحویل داده شد.</p>
+      <div class="rev-product">🧴 کرم ضد آفتاب SPF50</div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section reveal">
+  <div class="nl-inner">
+    <div class="nl-text">
+      <h3>📩 عضویت در خبرنامه</h3>
+      <p>جدیدترین تخفیف‌ها، محصولات و مقالات مراقبت از پوست را مستقیم دریافت کنید</p>
+    </div>
+    <div class="nl-form" role="form" aria-label="فرم خبرنامه">
+      <input type="email" id="nl-email" placeholder="ایمیل شما..." aria-label="آدرس ایمیل">
+      <button class="btn-sub" id="nl-btn">عضویت</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#" aria-label="مانلی شاپ">
+        <div class="logo-icon" aria-hidden="true">💄</div>
+        <div class="logo-text"><strong>مانلی شاپ</strong><small>مرجع رسمی بهداشتی و آرایشی</small></div>
+      </a>
+      <p class="footer-desc">مانلی شاپ، تأمین‌کننده مستقیم محصولات با تضمین اصالت و بهترین قیمت. واسطه‌ها را حذف کرده‌ایم تا شما بهترین را با مناسب‌ترین قیمت دریافت کنید.</p>
+      <div class="f-socials">
+        <button class="social-btn" aria-label="اینستاگرام">📸</button>
+        <button class="social-btn" aria-label="تلگرام">✈️</button>
+        <button class="social-btn" aria-label="توییتر">🐦</button>
+        <button class="social-btn" aria-label="یوتیوب">📺</button>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>راهنمای خرید</h4>
+      <ul class="footer-links">
+        <li><a href="#">نحوه ثبت سفارش</a></li>
+        <li><a href="#">روش‌های پرداخت</a></li>
+        <li><a href="#">ارسال و تحویل</a></li>
+        <li><a href="#">پیگیری سفارش</a></li>
+        <li><a href="#">بازگشت کالا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>خدمات مشتریان</h4>
+      <ul class="footer-links">
+        <li><a href="#">پرسش‌های متداول</a></li>
+        <li><a href="#">رویه بازگرداندن کالا</a></li>
+        <li><a href="#">شرایط استفاده</a></li>
+        <li><a href="#">حریم خصوصی</a></li>
+        <li><a href="#">تماس با ما</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>درباره ما</h4>
+      <ul class="footer-links">
+        <li><a href="#">درباره مانلی شاپ</a></li>
+        <li><a href="#">همکاری با ما</a></li>
+        <li><a href="#">نمایندگی فروش</a></li>
+        <li><a href="#">وبلاگ و مقالات</a></li>
+        <li><a href="#">فرصت‌های شغلی</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© ۱۴۰۳ تمامی حقوق متعلق به شرکت مانلی شاپ است.</span>
+    <div class="trust-logos">
+      <div class="tl">🔒 نماد اعتماد الکترونیکی</div>
+      <div class="tl">🏛️ مجوز وزارت بهداشت</div>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="sticky-mob" role="navigation" aria-label="ناوبری موبایل">
+  <button class="mob-nav-btn active"><span class="mbn-icon">🏠</span><span class="mbn-label">خانه</span></button>
+  <button class="mob-nav-btn"><span class="mbn-icon">🔍</span><span class="mbn-label">جستجو</span></button>
+  <button class="mob-nav-btn" id="mob-cart-btn"><span class="mbn-icon">🛒</span><span class="mbn-label">سبد</span></button>
+  <button class="mob-nav-btn"><span class="mbn-icon">🤍</span><span class="mbn-label">علاقه</span></button>
+  <button class="mob-nav-btn"><span class="mbn-icon">👤</span><span class="mbn-label">حساب</span></button>
+</nav>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cart-overlay" role="dialog" aria-modal="true" aria-label="سبد خرید"></div>
+<div class="cart-drawer" id="cart-drawer">
+  <div class="cart-header">
+    <strong>🛒 سبد خرید</strong>
+    <button class="btn-close-cart" id="close-cart" aria-label="بستن سبد خرید">✕</button>
+  </div>
+  <div class="cart-body" id="cart-body">
+    <div class="cart-empty">
+      <div class="cart-empty-icon">🛒</div>
+      <h3>سبد خرید شما خالی است</h3>
+      <p>محصولات مورد نظر خود را به سبد اضافه کنید</p>
+    </div>
+  </div>
+  <div class="cart-footer" id="cart-footer" style="display:none">
+    <div class="cart-total">
+      <span>مجموع سبد خرید:</span>
+      <strong id="cart-total-price">۰ تومان</strong>
+    </div>
+    <button class="btn-checkout">ادامه و پرداخت →</button>
+  </div>
+</div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav-overlay" id="mob-overlay"></div>
+<div class="mobile-nav-drawer" id="mob-drawer" role="dialog" aria-modal="true" aria-label="منو">
+  <div class="mobile-nav-header">
+    <strong>منوی اصلی</strong>
+    <button class="btn-close-drawer" id="close-mob" aria-label="بستن منو">✕</button>
+  </div>
+  <div class="mobile-nav-links">
+    <div class="mobile-nav-link"><span class="mni">🏠</span> خانه</div>
+    <div class="mobile-nav-link"><span class="mni">🌿</span> مراقبت پوست</div>
+    <div class="mobile-nav-link"><span class="mni">💆</span> مراقبت مو</div>
+    <div class="mobile-nav-link"><span class="mni">💄</span> آرایشی</div>
+    <div class="mobile-nav-link"><span class="mni">🪥</span> بهداشتی</div>
+    <div class="mobile-nav-link"><span class="mni">🌸</span> عطر و ادکلن</div>
+    <div class="mobile-nav-link"><span class="mni">🏷️</span> برندها</div>
+    <div class="mobile-nav-link"><span class="mni">🔥</span> پیشنهاد ویژه</div>
+    <div class="mobile-nav-link"><span class="mni">👑</span> کلاب VIP</div>
+    <div class="mobile-nav-link"><span class="mni">👤</span> ورود / ثبت‌نام</div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   DATA
+   ========================================================= */
+const PRODUCTS = [
+  {id:1,name:'کرم ضد آفتاب SPF50',brand:'مانلی شاپ',icon:'🧴',price:212000,oldPrice:265000,discount:20,stars:5,reviews:243,tags:['oily','dry','combo'],isNew:false},
+  {id:2,name:'شامپو ضد ریزش موی چرب',brand:'مانلی شاپ',icon:'🧼',price:315000,oldPrice:384000,discount:18,stars:4,reviews:186,tags:['hair','oily'],isNew:false},
+  {id:3,name:'سرم ویتامین C روشن‌کننده',brand:'مانلی شاپ VIP',icon:'💊',price:382000,oldPrice:450000,discount:15,stars:5,reviews:412,tags:['dry','combo'],isNew:false},
+  {id:4,name:'کرم آبرسان ۲۴ ساعته',brand:'مانلی شاپ',icon:'🫙',price:246000,oldPrice:280000,discount:12,stars:4,reviews:327,tags:['hydrating','dry'],isNew:false},
+  {id:5,name:'ژل شستشوی پوست چرب',brand:'مانلی شاپ',icon:'🧽',price:162000,oldPrice:180000,discount:10,stars:5,reviews:568,tags:['oily','acne'],isNew:false},
+  {id:6,name:'سرم ضد پیری هیالورونیک',brand:'مانلی شاپ VIP',icon:'🌺',price:548000,oldPrice:null,discount:0,stars:5,reviews:782,tags:['hydrating','dry'],isNew:true},
+  {id:7,name:'لوسیون بدن مرطوب‌کننده',brand:'مانلی شاپ',icon:'🧴',price:165000,oldPrice:220000,discount:25,stars:4,reviews:435,tags:['dry','hydrating'],isNew:false},
+  {id:8,name:'فوم شستشوی ملایم',brand:'مانلی شاپ',icon:'🫧',price:136000,oldPrice:195000,discount:30,stars:4,reviews:614,tags:['combo','acne'],isNew:false},
+  {id:9,name:'کرم شب بازسازی پوست',brand:'مانلی شاپ VIP',icon:'🌙',price:420000,oldPrice:null,discount:0,stars:5,reviews:521,tags:['dry','hydrating'],isNew:true},
+  {id:10,name:'روغن ناخن تقویت‌کننده',brand:'مانلی شاپ',icon:'💅',price:138000,oldPrice:null,discount:0,stars:5,reviews:298,tags:['all'],isNew:false},
+];
+
+const SEARCH_SUGGESTIONS = [
+  {icon:'🧴',text:'کرم ضد آفتاب'},
+  {icon:'💊',text:'سرم ویتامین C'},
+  {icon:'🧼',text:'شامپو ضد ریزش'},
+  {icon:'🫙',text:'کرم آبرسان'},
+  {icon:'🌸',text:'عطر زنانه'},
+  {icon:'🧽',text:'ژل پاک‌کننده صورت'},
+  {icon:'🌿',text:'محصولات ارگانیک'},
+];
+
+/* =========================================================
+   CART STATE
+   ========================================================= */
+let cart = [];
+
+function cartTotal(){
+  return cart.reduce((s,i)=>s+i.price*i.qty,0);
+}
+function cartCount(){
+  return cart.reduce((s,i)=>s+i.qty,0);
+}
+function updateBadge(){
+  const b=document.getElementById('cart-badge');
+  const n=cartCount();
+  b.textContent=n;
+  b.classList.toggle('bump',false);
+  void b.offsetWidth;
+  b.classList.add('bump');
+  setTimeout(()=>b.classList.remove('bump'),350);
+}
+
+function addToCart(product){
+  const existing=cart.find(i=>i.id===product.id);
+  if(existing){existing.qty++;}
+  else{cart.push({...product,qty:1});}
+  updateBadge();
+  renderCart();
+  showToast(`✅ ${product.name} به سبد اضافه شد`);
+}
+
+function removeFromCart(id){
+  cart=cart.filter(i=>i.id!==id);
+  updateBadge();
+  renderCart();
+}
+function changeQty(id,delta){
+  const item=cart.find(i=>i.id===id);
+  if(!item)return;
+  item.qty+=delta;
+  if(item.qty<=0)removeFromCart(id);
+  else{updateBadge();renderCart();}
+}
+
+function formatPrice(n){
+  return n.toLocaleString('fa-IR')+' تومان';
+}
+
+function renderCart(){
+  const body=document.getElementById('cart-body');
+  const footer=document.getElementById('cart-footer');
+  const totalEl=document.getElementById('cart-total-price');
+  if(!cart.length){
+    body.innerHTML=`<div class="cart-empty"><div class="cart-empty-icon">🛒</div><h3>سبد خرید خالی است</h3><p>محصولات مورد نظر را به سبد اضافه کنید</p></div>`;
+    footer.style.display='none';
+    return;
+  }
+  footer.style.display='block';
+  totalEl.textContent=formatPrice(cartTotal());
+  body.innerHTML=cart.map(item=>`
+    <div class="cart-item" data-id="${item.id}">
+      <div class="cart-item-img">${item.icon}</div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">${item.name}</div>
+        <div class="cart-item-price">${formatPrice(item.price)}</div>
+        <div class="cart-item-qty">
+          <button class="qty-btn" onclick="changeQty(${item.id},-1)" aria-label="کاهش تعداد">−</button>
+          <span class="qty-num">${item.qty}</span>
+          <button class="qty-btn" onclick="changeQty(${item.id},1)" aria-label="افزایش تعداد">+</button>
+          <button class="cart-item-del" onclick="removeFromCart(${item.id})" aria-label="حذف">🗑</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* =========================================================
+   PRODUCT CARD RENDERER
+   ========================================================= */
+function buildCard(p){
+  const discBadge=p.discount?`<div class="pd-badge">${p.discount}٪</div>`:(p.isNew?`<div class="pd-badge new">جدید</div>`:'');
+  const oldPrice=p.oldPrice?`<span class="p-old">${p.oldPrice.toLocaleString('fa-IR')}</span>`:'';
+  const starsHtml='★'.repeat(p.stars)+'☆'.repeat(5-p.stars);
+  return `
+    <div class="product-card" data-id="${p.id}">
+      ${discBadge}
+      <button class="pd-wish" aria-label="افزودن به علاقه‌مندی‌ها" onclick="toggleWish(this,event)">🤍</button>
+      <div class="pd-img">${p.icon}</div>
+      <div class="pd-info">
+        <div class="pd-brand">${p.brand}</div>
+        <div class="pd-name">${p.name}</div>
+        <div class="pd-stars">
+          <span class="stars">${starsHtml}</span>
+          <span class="rc">(${p.reviews.toLocaleString('fa-IR')})</span>
+        </div>
+        <div class="pd-row">
+          <div class="price-group">
+            ${oldPrice}
+            <span class="p-new">${p.price.toLocaleString('fa-IR')} <span class="p-unit">تومان</span></span>
+          </div>
+          <button class="btn-add" onclick="handleAddToCart(${p.id},this,event)" aria-label="افزودن به سبد خرید">+</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function handleAddToCart(id,btn,e){
+  e.stopPropagation();
+  const p=PRODUCTS.find(p=>p.id===id);
+  if(!p)return;
+  btn.classList.remove('added');
+  void btn.offsetWidth;
+  btn.classList.add('added');
+  setTimeout(()=>btn.classList.remove('added'),400);
+  addToCart(p);
+}
+function toggleWish(btn,e){
+  e.stopPropagation();
+  const liked=btn.textContent==='❤️';
+  btn.textContent=liked?'🤍':'❤️';
+  btn.classList.toggle('liked',!liked);
+  showToast(liked?'💔 از علاقه‌مندی‌ها حذف شد':'❤️ به علاقه‌مندی‌ها اضافه شد');
+}
+
+/* =========================================================
+   RENDER GRIDS
+   ========================================================= */
+function renderSpecials(){
+  const grid=document.getElementById('specials-grid');
+  if(!grid)return;
+  const specials=PRODUCTS.filter(p=>p.discount>0).slice(0,5);
+  grid.innerHTML=specials.map(buildCard).join('');
+}
+
+function renderPopular(filter='all'){
+  const grid=document.getElementById('popular-grid');
+  if(!grid)return;
+  const filtered=filter==='all'?PRODUCTS:PRODUCTS.filter(p=>p.tags.includes(filter)||p.tags.includes('all'));
+  grid.innerHTML=filtered.slice(0,5).map(buildCard).join('');
+  // re-trigger stagger
+  grid.classList.remove('visible');
+  void grid.offsetWidth;
+  grid.classList.add('visible');
+}
+
+/* =========================================================
+   COUNTDOWN TIMER
+   ========================================================= */
+let prevSec=-1;
+function updateTimer(){
+  const now=new Date();
+  const end=new Date(now);end.setHours(23,59,59,999);
+  const diff=end-now;
+  const h=Math.floor(diff/3600000);
+  const m=Math.floor((diff%3600000)/60000);
+  const s=Math.floor((diff%60000)/1000);
+  const hEl=document.getElementById('cd-h');
+  const mEl=document.getElementById('cd-m');
+  const sEl=document.getElementById('cd-s');
+  if(!hEl)return;
+  hEl.textContent=String(h).padStart(2,'0');
+  mEl.textContent=String(m).padStart(2,'0');
+  sEl.textContent=String(s).padStart(2,'0');
+  if(s!==prevSec){
+    sEl.classList.remove('tick');void sEl.offsetWidth;sEl.classList.add('tick');
+    if(s===59){mEl.classList.remove('tick');void mEl.offsetWidth;mEl.classList.add('tick');}
+    prevSec=s;
+  }
+}
+updateTimer();
+setInterval(updateTimer,1000);
+
+/* =========================================================
+   TOAST
+   ========================================================= */
+function showToast(msg,duration=2800){
+  const container=document.getElementById('toast-container');
+  const el=document.createElement('div');
+  el.className='toast';
+  el.textContent=msg;
+  container.appendChild(el);
+  setTimeout(()=>{
+    el.classList.add('removing');
+    setTimeout(()=>el.remove(),350);
+  },duration);
+}
+
+/* =========================================================
+   SEARCH SUGGESTIONS
+   ========================================================= */
+const searchInput=document.getElementById('search-input');
+const sugg=document.getElementById('search-sugg');
+
+searchInput&&searchInput.addEventListener('input',()=>{
+  const q=searchInput.value.trim();
+  if(!q){sugg.classList.remove('open');return;}
+  const matches=SEARCH_SUGGESTIONS.filter(s=>s.text.includes(q)||q.length<2);
+  if(!matches.length){sugg.classList.remove('open');return;}
+  sugg.innerHTML=matches.slice(0,6).map(s=>`
+    <div class="suggestion-item" role="option" tabindex="0">
+      <span class="si-icon">${s.icon}</span>${s.text}
+    </div>`).join('');
+  sugg.classList.add('open');
+});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.search-wrap'))sugg.classList.remove('open');
+});
+sugg&&sugg.addEventListener('click',e=>{
+  const item=e.target.closest('.suggestion-item');
+  if(item){searchInput.value=item.textContent.trim();sugg.classList.remove('open');}
+});
+
+/* =========================================================
+   FILTER TABS
+   ========================================================= */
+document.querySelectorAll('.ftab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    renderPopular(tab.dataset.filter||'all');
+  });
+});
+
+/* =========================================================
+   CART DRAWER
+   ========================================================= */
+function openCart(){
+  document.getElementById('cart-drawer').classList.add('open');
+  document.getElementById('cart-overlay').classList.add('open');
+  document.getElementById('cart-btn')&&document.getElementById('cart-btn').setAttribute('aria-expanded','true');
+  document.body.style.overflow='hidden';
+}
+function closeCart(){
+  document.getElementById('cart-drawer').classList.remove('open');
+  document.getElementById('cart-overlay').classList.remove('open');
+  document.getElementById('cart-btn')&&document.getElementById('cart-btn').setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+document.getElementById('cart-btn')&&document.getElementById('cart-btn').addEventListener('click',openCart);
+document.getElementById('mob-cart-btn')&&document.getElementById('mob-cart-btn').addEventListener('click',openCart);
+document.getElementById('close-cart')&&document.getElementById('close-cart').addEventListener('click',closeCart);
+document.getElementById('cart-overlay')&&document.getElementById('cart-overlay').addEventListener('click',closeCart);
+
+/* =========================================================
+   MOBILE NAV DRAWER
+   ========================================================= */
+function openMobNav(){
+  document.getElementById('mob-drawer').classList.add('open');
+  document.getElementById('mob-overlay').classList.add('open');
+  document.getElementById('menu-btn')&&document.getElementById('menu-btn').setAttribute('aria-expanded','true');
+  document.body.style.overflow='hidden';
+}
+function closeMobNav(){
+  document.getElementById('mob-drawer').classList.remove('open');
+  document.getElementById('mob-overlay').classList.remove('open');
+  document.getElementById('menu-btn')&&document.getElementById('menu-btn').setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+document.getElementById('menu-btn')&&document.getElementById('menu-btn').addEventListener('click',openMobNav);
+document.getElementById('close-mob')&&document.getElementById('close-mob').addEventListener('click',closeMobNav);
+document.getElementById('mob-overlay')&&document.getElementById('mob-overlay').addEventListener('click',closeMobNav);
+
+/* Keyboard ESC closes drawers */
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){closeCart();closeMobNav();}
+});
+
+/* =========================================================
+   NAV ITEMS CLICK
+   ========================================================= */
+document.querySelectorAll('.nav-item').forEach(item=>{
+  item.addEventListener('click',()=>{
+    document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+/* Mobile bottom nav active */
+document.querySelectorAll('.mob-nav-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.mob-nav-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+/* =========================================================
+   SCROLL: HEADER SHADOW + REVEAL ANIMATIONS
+   ========================================================= */
+const header=document.getElementById('site-header');
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal,.reveal-left,.stagger').forEach(el=>observer.observe(el));
+
+window.addEventListener('scroll',()=>{
+  if(header)header.classList.toggle('scrolled',window.scrollY>10);
+},{passive:true});
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+document.getElementById('nl-btn')&&document.getElementById('nl-btn').addEventListener('click',()=>{
+  const email=document.getElementById('nl-email');
+  if(!email||!email.value.trim()){showToast('⚠️ لطفاً ایمیل خود را وارد کنید');return;}
+  showToast('✅ با موفقیت در خبرنامه عضو شدید!');
+  email.value='';
+});
+
+/* =========================================================
+   INIT
+   ========================================================= */
+renderSpecials();
+renderPopular();
+renderCart();
+updateBadge();
+</script>
+</body>
+</html>

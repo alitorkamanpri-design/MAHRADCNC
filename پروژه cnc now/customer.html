@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="داشبورد مشتری — مدیریت سفارشات و پروفایل"
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>داشبورد مشتری — فروشگاه قطعات CNC</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="customer.css" />
+  </head>
+  <body>
+    <!-- بررسی ورود -->
+    <script>
+      const user = localStorage.getItem("user");
+      if (!user) {
+        window.location.href = "auth.html";
+      }
+      const userData = JSON.parse(user);
+    </script>
+
+    <a href="#main-content" class="skip-link">رفتن به محتوای اصلی</a>
+
+    <!-- Layout -->
+    <div class="customer-layout">
+      <!-- Sidebar -->
+      <aside class="customer-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-user-info">
+            <div class="sidebar-user-name">محمد احمدی</div>
+            <div class="sidebar-user-email">user@email.com</div>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul class="sidebar-menu">
+            <li>
+              <a
+                href="#profile"
+                class="sidebar-link active"
+                data-section="profile"
+              >
+                <span class="sidebar-icon">👤</span>
+                <span>پروفایل</span>
+              </a>
+            </li>
+            <li>
+              <a href="#orders" class="sidebar-link" data-section="orders">
+                <span class="sidebar-icon">🛒</span>
+                <span>سفارشات</span>
+                <span class="sidebar-badge">۲</span>
+              </a>
+            </li>
+            <li>
+              <a href="#wishlist" class="sidebar-link" data-section="wishlist">
+                <span class="sidebar-icon">❤️</span>
+                <span>علاقه‌مندی‌ها</span>
+              </a>
+            </li>
+            <li>
+              <a href="#settings" class="sidebar-link" data-section="settings">
+                <span class="sidebar-icon">⚙️</span>
+                <span>تنظیمات</span>
+              </a>
+            </li>
+            <li>
+              <a href="#support" class="sidebar-link" data-section="support">
+                <span class="sidebar-icon">💬</span>
+                <span>پشتیبانی</span>
+              </a>
+            </li>
+            <li style="margin-top: auto">
+              <button
+                class="btn btn-logout"
+                style="
+                  width: 100%;
+                  text-align: right;
+                  padding: 12px 16px;
+                  background-color: #fee2e2;
+                  color: #ef4444;
+                "
+              >
+                🚪 خروج
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="customer-main" id="main-content">
+        <!-- Header -->
+        <div class="customer-header">
+          <h1 class="page-title">داشبورد مشتری</h1>
+          <div class="page-actions">
+            <button class="theme-toggle" title="تغییر تم">🌙</button>
+            <a href="index.html" class="btn btn-ghost">← بازگشت به فروشگاه</a>
+          </div>
+        </div>
+
+        <!-- Profile Section (Active) -->
+        <section id="profile-section" style="display: block">
+          <!-- Profile Cards -->
+          <div class="profile-cards">
+            <div class="profile-card">
+              <div
+                class="profile-card-icon"
+                style="background-color: #dbeafe; color: #2563eb"
+              >
+                📊
+              </div>
+              <div class="profile-card-content">
+                <div class="profile-card-label">تعداد سفارشات</div>
+                <div class="profile-card-value">
+                  ۲۳ <span class="profile-card-unit">سفارش</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <div
+                class="profile-card-icon"
+                style="background-color: #d1fae5; color: #10b981"
+              >
+                💰
+              </div>
+              <div class="profile-card-content">
+                <div class="profile-card-label">کل خریدها</div>
+                <div class="profile-card-value">
+                  ۳۲,۵۰۰,۰۰۰ <span class="profile-card-unit">تومان</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <div
+                class="profile-card-icon"
+                style="background-color: #fef3c7; color: #f59e0b"
+              >
+                🎁
+              </div>
+              <div class="profile-card-content">
+                <div class="profile-card-label">امتیازات</div>
+                <div class="profile-card-value">
+                  ۲۴۵ <span class="profile-card-unit">نقطه</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <div
+                class="profile-card-icon"
+                style="background-color: #f3e8ff; color: #7c3aed"
+              >
+                ⭐
+              </div>
+              <div class="profile-card-content">
+                <div class="profile-card-label">عضویت</div>
+                <div class="profile-card-value">VIP</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edit Profile Form -->
+          <div class="profile-form">
+            <div class="form-section">
+              <h3 class="form-section-title">اطلاعات شخصی</h3>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label">نام و نام‌خانوادگی</label>
+                  <input type="text" class="form-input" value="محمد احمدی" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">ایمیل</label>
+                  <input
+                    type="email"
+                    class="form-input"
+                    value="user@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label">شماره تلفن</label>
+                  <input type="tel" class="form-input" value="۰۹۱۲۳۴۵۶۷۸۹" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">کد ملی</label>
+                  <input type="text" class="form-input" value="۰۰۱۲۳۴۵۶۷۸" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">آدرس</h3>
+              <div class="form-group">
+                <label class="form-label">آدرس</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  value="تهران، خیابان انقلاب"
+                />
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label">شهر</label>
+                  <input type="text" class="form-input" value="تهران" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">استان</label>
+                  <input type="text" class="form-input" value="تهران" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">کد پستی</label>
+                  <input type="text" class="form-input" value="۱۲۳۴۵۶۷" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-save">💾 ذخیره تغییرات</button>
+              <button class="btn-cancel">❌ لغو</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Orders Section -->
+        <section id="orders-section" style="display: none">
+          <h2 class="section-title" style="margin-bottom: 20px">سفارشات</h2>
+          <div class="orders-list">
+            <!-- Order Item 1 -->
+            <div class="order-item">
+              <div class="order-header">
+                <span class="order-id">سفارش #۳۴۵۶۷۸۹۰</span>
+                <span class="order-status delivered">✓ تحویل شده</span>
+              </div>
+              <div class="order-details">
+                <div class="order-detail">
+                  <div class="order-detail-label">تاریخ سفارش</div>
+                  <div class="order-detail-value">۱۲ خردادماه ۱۴۰۳</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">تعداد آیتم</div>
+                  <div class="order-detail-value">۴ محصول</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">مقدار کل</div>
+                  <div class="order-price">۲,۳۵۰,۰۰۰ تومان</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Item 2 -->
+            <div class="order-item">
+              <div class="order-header">
+                <span class="order-id">سفارش #۳۴۵۶۷۸۹۱</span>
+                <span class="order-status shipped">📦 ارسال شده</span>
+              </div>
+              <div class="order-details">
+                <div class="order-detail">
+                  <div class="order-detail-label">تاریخ سفارش</div>
+                  <div class="order-detail-value">۱۵ خردادماه ۱۴۰۳</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">تعداد آیتم</div>
+                  <div class="order-detail-value">۲ محصول</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">مقدار کل</div>
+                  <div class="order-price">۸۵۰,۰۰۰ تومان</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Item 3 -->
+            <div class="order-item">
+              <div class="order-header">
+                <span class="order-id">سفارش #۳۴۵۶۷۸۹۲</span>
+                <span class="order-status processing">⏳ درحال پردازش</span>
+              </div>
+              <div class="order-details">
+                <div class="order-detail">
+                  <div class="order-detail-label">تاریخ سفارش</div>
+                  <div class="order-detail-value">۱۶ خردادماه ۱۴۰۳</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">تعداد آیتم</div>
+                  <div class="order-detail-value">۳ محصول</div>
+                </div>
+                <div class="order-detail">
+                  <div class="order-detail-label">مقدار کل</div>
+                  <div class="order-price">۱,۲۲۵,۰۰۰ تومان</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Wishlist Section -->
+        <section id="wishlist-section" style="display: none">
+          <h2 class="section-title" style="margin-bottom: 20px">
+            علاقه‌مندی‌ها
+          </h2>
+          <div class="wishlist-grid">
+            <div class="wishlist-item">
+              <div class="wishlist-image">🔧</div>
+              <div class="wishlist-content">
+                <div class="wishlist-name">چاقوی برش دقیق</div>
+                <div class="wishlist-price">۲۵۰,۰۰۰ تومان</div>
+              </div>
+              <div class="wishlist-actions">
+                <button class="btn btn-primary btn-small">خرید</button>
+                <button class="btn btn-outline btn-small">حذف</button>
+              </div>
+            </div>
+
+            <div class="wishlist-item">
+              <div class="wishlist-image">⚙️</div>
+              <div class="wishlist-content">
+                <div class="wishlist-name">چرخ دنده فولاد</div>
+                <div class="wishlist-price">۸۵۰,۰۰۰ تومان</div>
+              </div>
+              <div class="wishlist-actions">
+                <button class="btn btn-primary btn-small">خرید</button>
+                <button class="btn btn-outline btn-small">حذف</button>
+              </div>
+            </div>
+
+            <div class="wishlist-item">
+              <div class="wishlist-image">📏</div>
+              <div class="wishlist-content">
+                <div class="wishlist-name">کالیپر دیجیتال</div>
+                <div class="wishlist-price">۳۲۰,۰۰۰ تومان</div>
+              </div>
+              <div class="wishlist-actions">
+                <button class="btn btn-primary btn-small">خرید</button>
+                <button class="btn btn-outline btn-small">حذف</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-section" style="display: none">
+          <h2 class="section-title" style="margin-bottom: 20px">تنظیمات</h2>
+          <div class="profile-form">
+            <div class="form-section">
+              <h3 class="form-section-title">تنظیمات حساب</h3>
+              <div class="form-group">
+                <label class="form-label">رمز عبور فعلی</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="••••••••"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">رمز عبور جدید</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="••••••••"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">تکرار رمز عبور</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="••••••••"
+                />
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">اطلاعات رسانی</h3>
+              <div class="form-checkbox" style="margin-bottom: 12px">
+                <input type="checkbox" id="email-notif" checked />
+                <label for="email-notif"
+                  >دریافت اطلاعات درباره محصولات جدید</label
+                >
+              </div>
+              <div class="form-checkbox" style="margin-bottom: 12px">
+                <input type="checkbox" id="order-notif" checked />
+                <label for="order-notif">اطلاع از وضعیت سفارشات</label>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="promo-notif" />
+                <label for="promo-notif">دریافت پیشنهادات و تخفیف‌ها</label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-save">💾 ذخیره تغییرات</button>
+              <button class="btn-cancel">❌ لغو</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support-section" style="display: none">
+          <h2 class="section-title" style="margin-bottom: 20px">پشتیبانی</h2>
+          <div class="profile-form">
+            <div class="form-section">
+              <h3 class="form-section-title">تماس با پشتیبانی</h3>
+              <div class="form-group">
+                <label class="form-label">موضوع</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="موضوع پیام خود را وارد کنید"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">شماره سفارش (اختیاری)</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="شماره سفارش"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">پیام</label>
+                <textarea
+                  class="form-input"
+                  style="height: 150px; resize: vertical; padding: 12px"
+                  placeholder="پیام خود را بنویسید..."
+                ></textarea>
+              </div>
+              <div class="form-actions">
+                <button class="btn-save">📤 ارسال پیام</button>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">اطلاعات تماس</h3>
+              <ul
+                style="
+                  list-style: none;
+                  padding: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <li>📞 تلفن: ۰۲۱-۱۲۳۴-۵۶۷۸</li>
+                <li>✉️ ایمیل: support@cncshop.ir</li>
+                <li>💬 چت: ۹ صبح تا ۵ بعدازظهر</li>
+                <li>📍 آدرس: تهران، خیابان انقلاب</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+    <script>
+      // مدیریت بخش‌های مختلف
+      document.querySelectorAll(".sidebar-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const section = this.getAttribute("data-section");
+
+          // مخفی تمام بخش‌ها
+          document
+            .querySelectorAll('section[id$="-section"]')
+            .forEach((sec) => {
+              sec.style.display = "none";
+            });
+
+          // نمایش بخش انتخاب شده
+          document.getElementById(section + "-section").style.display = "block";
+
+          // تغییر لینک فعال
+          document.querySelectorAll(".sidebar-link").forEach((l) => {
+            l.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+
+      // مدیریت دکمه خروج
+      document.querySelectorAll(".btn-logout").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (confirm("آیا مطمئن هستید؟")) {
+            localStorage.removeItem("user");
+            window.location.href = "index.html";
+          }
+        });
+      });
+
+      console.log("✅ داشبورد مشتری بارگذاری شد");
+    </script>
+  </body>
+</html>

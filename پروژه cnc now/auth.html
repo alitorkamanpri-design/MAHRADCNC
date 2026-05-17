@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ورود یا ثبت‌نام در سیستم مدیریت فروشگاه CNC صنعتی"
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>ورود / ثبت‌نام — فروشگاه قطعات CNC</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="auth.css" />
+
+    <style>
+      /* استایل‌های اضافی اختصاصی برای صفحه ورود */
+      .auth-page {
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip Link برای دسترسی‌پذیری -->
+    <a href="#auth-content" class="skip-link">رفتن به فرم ورود</a>
+
+    <!-- صفحه ورود اصلی -->
+    <div class="auth-page">
+      <!-- هدر -->
+      <div style="position: absolute; top: 20px; left: 20px; right: auto">
+        <a href="index.html" class="btn btn-ghost" style="color: white"
+          >← بازگشت به صفحه اصلی</a
+        >
+      </div>
+
+      <!-- محتوای مرکزی -->
+      <div class="auth-container">
+        <!-- پنل فرم -->
+        <div class="auth-form-wrapper" id="auth-content">
+          <!-- هدر -->
+          <div class="auth-header">
+            <div class="auth-logo">
+              <span class="auth-logo-icon">⚙️</span>
+              <span>CNC<span style="color: #f59e0b">Admin</span></span>
+            </div>
+            <h1 class="auth-title">خوش آمدید</h1>
+            <p class="auth-subtitle">سیستم مدیریت فروشگاه قطعات صنعتی</p>
+          </div>
+
+          <!-- تب‌های ورود و ثبت‌نام -->
+          <div
+            style="
+              display: flex;
+              gap: 16px;
+              margin-bottom: 32px;
+              border-bottom: 2px solid #e5e7eb;
+            "
+          >
+            <button
+              data-tab="login"
+              class="tab-btn active"
+              style="
+                padding: 12px 0;
+                border: none;
+                background: none;
+                color: #111827;
+                font-weight: 600;
+                border-bottom: 3px solid #2563eb;
+                cursor: pointer;
+              "
+            >
+              ورود
+            </button>
+            <button
+              data-tab="register"
+              class="tab-btn"
+              style="
+                padding: 12px 0;
+                border: none;
+                background: none;
+                color: #6b7280;
+                font-weight: 600;
+                border-bottom: 3px solid transparent;
+                cursor: pointer;
+              "
+            >
+              ثبت‌نام
+            </button>
+          </div>
+
+          <!-- فرم ورود -->
+          <div id="loginForm" class="tab-content active">
+            <form class="auth-form">
+              <!-- ایمیل -->
+              <div class="form-group">
+                <label class="form-label form-label-required">ایمیل</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="example@email.com"
+                  required
+                />
+                <span class="form-error">ایمیل نامعتبر است</span>
+              </div>
+
+              <!-- رمز عبور -->
+              <div class="form-group">
+                <label class="form-label form-label-required">رمز عبور</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="••••••••"
+                  required
+                />
+                <span class="form-error">رمز عبور الزامی است</span>
+              </div>
+
+              <!-- یادآوری -->
+              <div class="form-checkbox">
+                <input type="checkbox" id="remember" />
+                <label for="remember">مرا یادآوری کن</label>
+              </div>
+
+              <!-- دکمه ورود -->
+              <button type="submit" class="auth-btn auth-btn-primary">
+                ورود
+              </button>
+
+              <!-- لینک رمز فراموشی -->
+              <div style="text-align: center; margin-top: 16px">
+                <a
+                  href="#"
+                  style="
+                    color: #2563eb;
+                    font-size: 14px;
+                    text-decoration: underline;
+                  "
+                  >رمز عبور را فراموش کردم</a
+                >
+              </div>
+            </form>
+          </div>
+
+          <!-- فرم ثبت‌نام -->
+          <div id="registerForm" class="tab-content">
+            <form class="auth-form">
+              <!-- نام -->
+              <div class="form-group">
+                <label class="form-label form-label-required">نام</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="نام خود را وارد کنید"
+                  required
+                />
+                <span class="form-error">نام الزامی است</span>
+              </div>
+
+              <!-- ایمیل -->
+              <div class="form-group">
+                <label class="form-label form-label-required">ایمیل</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="example@email.com"
+                  required
+                />
+                <span class="form-error">ایمیل نامعتبر است</span>
+              </div>
+
+              <!-- رمز عبور -->
+              <div class="form-group">
+                <label class="form-label form-label-required">رمز عبور</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="••••••••"
+                  required
+                />
+                <span class="form-error"
+                  >رمز عبور حداقل 6 کاراکتر باید باشد</span
+                >
+              </div>
+
+              <!-- تکرار رمز -->
+              <div class="form-group">
+                <label class="form-label form-label-required"
+                  >تکرار رمز عبور</label
+                >
+                <input
+                  type="password"
+                  name="confirm-password"
+                  class="form-input"
+                  placeholder="••••••••"
+                  required
+                />
+                <span class="form-error">رمزهای عبور مطابقت ندارند</span>
+              </div>
+
+              <!-- قبول شرایط -->
+              <div class="form-checkbox">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">
+                  <a href="#">شرایط و ضوابط</a> را می‌پذیرم
+                </label>
+              </div>
+
+              <!-- دکمه ثبت‌نام -->
+              <button type="submit" class="auth-btn auth-btn-primary">
+                ثبت‌نام
+              </button>
+            </form>
+          </div>
+
+          <!-- پای فرم -->
+          <div class="auth-footer">
+            <p class="auth-footer-text">
+              <span id="footerText">حساب دارید؟</span>
+              <a
+                href="#"
+                class="auth-footer-link"
+                onclick="
+                  document.querySelector('[data-tab=login]').click();
+                  return false;
+                "
+                >وارد شوید</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- پنل اطلاعات (موبایل مخفی) -->
+        <div class="auth-info">
+          <h2 style="font-size: 32px; margin-bottom: 40px">
+            چرا ما را انتخاب کنید؟
+          </h2>
+
+          <div class="auth-info-item">
+            <div class="auth-info-icon">🔒</div>
+            <div class="auth-info-content">
+              <h3>امنیت بالا</h3>
+              <p>تمام داده‌های شما با رمزگذاری SSL محفوظ می‌شوند</p>
+            </div>
+          </div>
+
+          <div class="auth-info-item">
+            <div class="auth-info-icon">⚡</div>
+            <div class="auth-info-content">
+              <h3>سریع و آسان</h3>
+              <p>ورود و ثبت‌نام تنها در چند ثانیه</p>
+            </div>
+          </div>
+
+          <div class="auth-info-item">
+            <div class="auth-info-icon">📊</div>
+            <div class="auth-info-content">
+              <h3>داشبورد قدرتمند</h3>
+              <p>مدیریت کاملی بر سفارشات و محصولات</p>
+            </div>
+          </div>
+
+          <div class="auth-info-item">
+            <div class="auth-info-icon">🎯</div>
+            <div class="auth-info-content">
+              <h3>پشتیبانی ۲۴/۷</h3>
+              <p>تیم پشتیبانی ما همیشه برای کمک آماده است</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+    <script>
+      // مدیریت تب‌ها
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const tabName = this.getAttribute("data-tab");
+
+          // حذف فعال از تمام تب‌ها
+          document.querySelectorAll(".tab-btn").forEach((b) => {
+            b.classList.remove("active");
+            b.style.borderBottomColor = "transparent";
+            b.style.color = "#6b7280";
+          });
+
+          // حذف فعال از تمام فرم‌ها
+          document.querySelectorAll(".tab-content").forEach((form) => {
+            form.classList.remove("active");
+          });
+
+          // اضافه کردن فعال به تب فعلی
+          this.classList.add("active");
+          this.style.borderBottomColor = "#2563eb";
+          this.style.color = "#111827";
+
+          // نمایش فرم انتخاب شده
+          document.getElementById(tabName + "Form").classList.add("active");
+
+          // تغییر متن footer
+          const footerText = document.getElementById("footerText");
+          if (tabName === "register") {
+            footerText.textContent = "حساب ندارید؟";
+          } else {
+            footerText.textContent = "حساب دارید؟";
+          }
+        });
+      });
+
+      // مدیریت فرم‌ها
+      document.querySelectorAll("form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const isRegister = this.closest("#registerForm");
+
+          if (isRegister) {
+            localStorage.setItem(
+              "user",
+              JSON.stringify({
+                email: this.querySelector('input[type=\"email\"]').value,
+                userType: "customer",
+              }),
+            );
+            window.location.href = "customer.html";
+          } else {
+            localStorage.setItem(
+              "user",
+              JSON.stringify({
+                email: this.querySelector('input[type=\"email\"]').value,
+                userType: "admin",
+              }),
+            );
+            window.location.href = "admin.html";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

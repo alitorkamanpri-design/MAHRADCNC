@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <!-- ═══════════════════════════════════════
+       متا تگ‌های پایه — برای سئو و نمایش صحیح
+       ═══════════════════════════════════════ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ═══════════════════════════════════════
+       متا تگ‌های سئو — الزامی برای هر صفحه
+       ═══════════════════════════════════════ -->
+  <title>داشبورد مدیریت — مانلی شاپ</title>
+  <meta name="description" content="پنل مدیریت مانلی شاپ — مدیریت محصولات، سفارشات، کاربران و تحلیل‌ها">
+  <meta name="keywords" content="داشبورد مدیریت، پنل ادمین، مانلی شاپ">
+  <meta name="author" content="مانلی شاپ">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- ═══════════════════════════════════════
+       فایکون‌ها
+       ═══════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- ═══════════════════════════════════════
+       تنها فایل CSS خارجی — هیچ استایل دیگری مجاز نیست
+       ═══════════════════════════════════════ -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       لایه اصلی داشبورد
+       ═══════════════════════════════════════ -->
+  <div class="dashboard-layout">
+
+    <!-- ═══════════════════════════════════════
+         سایدبار ناوبری
+         ═══════════════════════════════════════ -->
+    <aside class="sidebar" role="navigation" aria-label="منوی مدیریت" id="sidebar">
+      <!-- ═══════════════════════════════════════
+           هدر سایدبار — لوگو
+           ═══════════════════════════════════════ -->
+      <div class="sidebar-header">
+        <a href="#" class="logo" aria-label="مانلی شاپ — صفحه اصلی">
+          <div class="logo-icon" aria-hidden="true">💄</div>
+          <div class="logo-text">
+            <strong>مانلی شاپ</strong>
+            <small>پنل مدیریت</small>
+          </div>
+        </a>
+        <button class="btn-close-sidebar" id="close-sidebar" aria-label="بستن منو">
+          <span aria-hidden="true">✕</span>
+        </button>
+      </div>
+
+      <!-- ═══════════════════════════════════════
+           منوی اصلی سایدبار
+           ═══════════════════════════════════════ -->
+      <nav class="sidebar-nav" aria-label="ناوبری اصلی">
+        <div class="nav-section">
+          <span class="nav-label">نمای کلی</span>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link active" aria-current="page">
+                <span class="nav-icon" aria-hidden="true">📊</span>
+                <span class="nav-text">داشبورد</span>
+                <span class="nav-badge">جدید</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">📈</span>
+                <span class="nav-text">تحلیل‌ها</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">🔔</span>
+                <span class="nav-text">اعلانات</span>
+                <span class="nav-badge alert">۱۲</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-label">مدیریت فروش</span>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">📦</span>
+                <span class="nav-text">محصولات</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">🛒</span>
+                <span class="nav-text">سفارشات</span>
+                <span class="nav-badge">۲۴۵</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">🏷️</span>
+                <span class="nav-text">تخفیف‌ها</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">📋</span>
+                <span class="nav-text">برندها</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-label">مدیریت کاربران</span>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">👥</span>
+                <span class="nav-text">مشتریان</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">👑</span>
+                <span class="nav-text">اعضای VIP</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">💬</span>
+                <span class="nav-text">نظرات</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-label">تنظیمات</span>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">⚙️</span>
+                <span class="nav-text">تنظیمات سایت</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">🔐</span>
+                <span class="nav-text">مدیریت دسترسی</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="nav-icon" aria-hidden="true">📄</span>
+                <span class="nav-text">گزارش‌ها</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ═══════════════════════════════════════
+           پروفایل ادمین در انتهای سایدبار
+           ═══════════════════════════════════════ -->
+      <div class="sidebar-footer">
+        <div class="admin-profile">
+          <div class="admin-avatar" aria-hidden="true">👨‍💼</div>
+          <div class="admin-info">
+            <strong>مدیر سیستم</strong>
+            <span>admin@manli.ir</span>
+          </div>
+        </div>
+        <button class="btn-logout" aria-label="خروج از حساب">
+          <span aria-hidden="true">🚪</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ═══════════════════════════════════════
+         اورلای سایدبار برای موبایل
+         ═══════════════════════════════════════ -->
+    <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+    <!-- ═══════════════════════════════════════
+         محتوای اصلی داشبورد
+         ═══════════════════════════════════════ -->
+    <main class="main-content" role="main">
+
+      <!-- ═══════════════════════════════════════
+           هدر داخلی داشبورد
+           ═══════════════════════════════════════ -->
+      <header class="dashboard-header" role="banner">
+        <div class="header-left">
+          <button class="btn-toggle-sidebar" id="toggle-sidebar" aria-label="باز/بستن منوی کناری">
+            <span aria-hidden="true">☰</span>
+          </button>
+          <h1 class="page-title">داشبورد مدیریت</h1>
+        </div>
+
+        <div class="header-right">
+          <!-- جستجو -->
+          <div class="header-search" role="search">
+            <input type="search" placeholder="جستجو در پنل..." aria-label="جستجو در پنل مدیریت">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+          </div>
+
+          <!-- اعلانات -->
+          <button class="btn-icon" id="notif-btn" aria-label="اعلانات" aria-expanded="false">
+            <span aria-hidden="true">🔔</span>
+            <span class="badge">۱۲</span>
+          </button>
+
+          <!-- پیام‌ها -->
+          <button class="btn-icon" aria-label="پیام‌ها">
+            <span aria-hidden="true">✉️</span>
+            <span class="badge">۵</span>
+          </button>
+
+          <!-- پروفایل -->
+          <div class="header-profile">
+            <div class="header-avatar" aria-hidden="true">👨‍💼</div>
+            <div class="header-user">
+              <strong>مدیر سیستم</strong>
+              <span>مدیر ارشد</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ═══════════════════════════════════════
+           محتوای داشبورد
+           ═══════════════════════════════════════ -->
+      <div class="dashboard-body">
+
+        <!-- ═══════════════════════════════════════
+             ردیف KPIها — شاخص‌های کلیدی عملکرد
+             ═══════════════════════════════════════ -->
+        <section class="kpi-section" aria-label="شاخص‌های کلیدی عملکرد">
+          <div class="kpi-grid">
+            <!-- کارت درآمد -->
+            <article class="kpi-card">
+              <div class="kpi-header">
+                <div class="kpi-icon revenue" aria-hidden="true">💰</div>
+                <div class="kpi-trend up">
+                  <span aria-hidden="true">↑</span>
+                  <span>۱۸٪</span>
+                </div>
+              </div>
+              <div class="kpi-body">
+                <span class="kpi-value">۲,۸۴۵,۰۰۰,۰۰۰</span>
+                <span class="kpi-label">درآمد ماهانه</span>
+              </div>
+              <div class="kpi-chart" aria-hidden="true">
+                <svg viewBox="0 0 120 40" class="sparkline">
+                  <polyline fill="none" stroke="var(--color-success)" stroke-width="2" points="0,35 20,28 40,30 60,18 80,22 100,8 120,12"/>
+                </svg>
+              </div>
+            </article>
+
+            <!-- کارت سفارشات -->
+            <article class="kpi-card">
+              <div class="kpi-header">
+                <div class="kpi-icon orders" aria-hidden="true">🛒</div>
+                <div class="kpi-trend up">
+                  <span aria-hidden="true">↑</span>
+                  <span>۲۴٪</span>
+                </div>
+              </div>
+              <div class="kpi-body">
+                <span class="kpi-value">۱,۲۴۵</span>
+                <span class="kpi-label">سفارش جدید</span>
+              </div>
+              <div class="kpi-chart" aria-hidden="true">
+                <svg viewBox="0 0 120 40" class="sparkline">
+                  <polyline fill="none" stroke="var(--color-info)" stroke-width="2" points="0,30 20,25 40,28 60,20 80,15 100,18 120,8"/>
+                </svg>
+              </div>
+            </article>
+
+            <!-- کارت مشتریان -->
+            <article class="kpi-card">
+              <div class="kpi-header">
+                <div class="kpi-icon users" aria-hidden="true">👥</div>
+                <div class="kpi-trend up">
+                  <span aria-hidden="true">↑</span>
+                  <span>۱۲٪</span>
+                </div>
+              </div>
+              <div class="kpi-body">
+                <span class="kpi-value">۸,۹۲۱</span>
+                <span class="kpi-label">مشتری فعال</span>
+              </div>
+              <div class="kpi-chart" aria-hidden="true">
+                <svg viewBox="0 0 120 40" class="sparkline">
+                  <polyline fill="none" stroke="var(--color-accent)" stroke-width="2" points="0,32 20,30 40,25 60,28 80,20 100,15 120,10"/>
+                </svg>
+              </div>
+            </article>
+
+            <!-- کارت محصولات -->
+            <article class="kpi-card">
+              <div class="kpi-header">
+                <div class="kpi-icon products" aria-hidden="true">📦</div>
+                <div class="kpi-trend down">
+                  <span aria-hidden="true">↓</span>
+                  <span>۳٪</span>
+                </div>
+              </div>
+              <div class="kpi-body">
+                <span class="kpi-value">۴۵۶</span>
+                <span class="kpi-label">محصول موجود</span>
+              </div>
+              <div class="kpi-chart" aria-hidden="true">
+                <svg viewBox="0 0 120 40" class="sparkline">
+                  <polyline fill="none" stroke="var(--color-warning)" stroke-width="2" points="0,15 20,18 40,22 60,20 80,25 100,28 120,30"/>
+                </svg>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             ردیف نمودارها و جداول
+             ═══════════════════════════════════════ -->
+        <div class="dashboard-row">
+          <!-- نمودار درآمد -->
+          <section class="chart-card large" aria-label="نمودار درآمد">
+            <div class="card-header">
+              <h2 class="card-title">📈 تحلیل درآمد</h2>
+              <div class="card-actions">
+                <select class="select-period" aria-label="انتخاب بازه زمانی">
+                  <option value="7">۷ روز اخیر</option>
+                  <option value="30" selected>۳۰ روز اخیر</option>
+                  <option value="90">۹۰ روز اخیر</option>
+                  <option value="365">یک سال</option>
+                </select>
+                <button class="btn-icon-sm" aria-label="دانلود گزارش">
+                  <span aria-hidden="true">📥</span>
+                </button>
+              </div>
+            </div>
+            <div class="chart-body">
+              <!-- نمودار میله‌ای شبیه‌سازی شده با CSS -->
+              <div class="bar-chart" aria-label="نمودار درآمد ماهانه">
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 45%;" data-value="۱.۲ میلیارد">
+                    <div class="bar-fill" style="height: 45%;"></div>
+                  </div>
+                  <span class="bar-label">فروردین</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 62%;" data-value="۱.۶ میلیارد">
+                    <div class="bar-fill" style="height: 62%;"></div>
+                  </div>
+                  <span class="bar-label">اردیبهشت</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 78%;" data-value="۲.۱ میلیارد">
+                    <div class="bar-fill" style="height: 78%;"></div>
+                  </div>
+                  <span class="bar-label">خرداد</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 55%;" data-value="۱.۵ میلیارد">
+                    <div class="bar-fill" style="height: 55%;"></div>
+                  </div>
+                  <span class="bar-label">تیر</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 85%;" data-value="۲.۳ میلیارد">
+                    <div class="bar-fill" style="height: 85%;"></div>
+                  </div>
+                  <span class="bar-label">مرداد</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="--bar-height: 70%;" data-value="۱.۹ میلیارد">
+                    <div class="bar-fill" style="height: 70%;"></div>
+                  </div>
+                  <span class="bar-label">شهریور</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- نمودار دایره‌ای — توزیع فروش -->
+          <section class="chart-card" aria-label="توزیع فروش دسته‌بندی‌ها">
+            <div class="card-header">
+              <h2 class="card-title">🥧 توزیع فروش</h2>
+            </div>
+            <div class="chart-body">
+              <div class="donut-chart" role="img" aria-label="نمودار دایره‌ای توزیع فروش">
+                <svg viewBox="0 0 100 100" class="donut-svg">
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-teal)" stroke-width="12" stroke-dasharray="75 251" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-rose)" stroke-width="12" stroke-dasharray="50 251" stroke-dashoffset="-75" transform="rotate(-90 50 50)"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-gold)" stroke-width="12" stroke-dasharray="40 251" stroke-dashoffset="-125" transform="rotate(-90 50 50)"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-info)" stroke-width="12" stroke-dasharray="35 251" stroke-dashoffset="-165" transform="rotate(-90 50 50)"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="var(--color-gray-light)" stroke-width="12" stroke-dasharray="51 251" stroke-dashoffset="-200" transform="rotate(-90 50 50)"/>
+                </svg>
+                <div class="donut-center">
+                  <strong>۲.۸ میلیارد</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="chart-legend">
+                <div class="legend-item">
+                  <span class="legend-dot" style="background: var(--color-teal);"></span>
+                  <span class="legend-label">مراقبت پوست</span>
+                  <span class="legend-value">۳۵٪</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot" style="background: var(--color-rose);"></span>
+                  <span class="legend-label">مراقبت مو</span>
+                  <span class="legend-value">۲۵٪</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot" style="background: var(--color-gold);"></span>
+                  <span class="legend-label">آرایشی</span>
+                  <span class="legend-value">۲۰٪</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot" style="background: var(--color-info);"></span>
+                  <span class="legend-label">عطر و ادکلن</span>
+                  <span class="legend-value">۱۵٪</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot" style="background: var(--color-gray-light);"></span>
+                  <span class="legend-label">سایر</span>
+                  <span class="legend-value">۵٪</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ═══════════════════════════════════════
+             جدول سفارشات اخیر
+             ═══════════════════════════════════════ -->
+        <section class="table-card" aria-label="سفارشات اخیر">
+          <div class="card-header">
+            <h2 class="card-title">🛒 آخرین سفارشات</h2>
+            <a href="#" class="btn-text">مشاهده همه →</a>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">شناسه</th>
+                  <th scope="col">مشتری</th>
+                  <th scope="col">محصولات</th>
+                  <th scope="col">مبلغ</th>
+                  <th scope="col">وضعیت</th>
+                  <th scope="col">تاریخ</th>
+                  <th scope="col">عملیات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="order-id">#۱۲۸۴۵</span></td>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="customer-avatar" aria-hidden="true">👩</span>
+                      <span>سارا محمدی</span>
+                    </div>
+                  </td>
+                  <td>سرم ویتامین C، کرم آبرسان</td>
+                  <td><strong>۶۲۸,۰۰۰</strong> تومان</td>
+                  <td><span class="status-badge success">تحویل شده</span></td>
+                  <td>۱۴۰۳/۰۲/۲۵</td>
+                  <td>
+                    <button class="btn-action" aria-label="مشاهده جزئیات">👁</button>
+                    <button class="btn-action" aria-label="ویرایش">✏️</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#۱۲۸۴۴</span></td>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="customer-avatar" aria-hidden="true">👨</span>
+                      <span>علی رضایی</span>
+                    </div>
+                  </td>
+                  <td>شامپو ضد ریزش</td>
+                  <td><strong>۳۱۵,۰۰۰</strong> تومان</td>
+                  <td><span class="status-badge warning">در حال ارسال</span></td>
+                  <td>۱۴۰۳/۰۲/۲۵</td>
+                  <td>
+                    <button class="btn-action" aria-label="مشاهده جزئیات">👁</button>
+                    <button class="btn-action" aria-label="ویرایش">✏️</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#۱۲۸۴۳</span></td>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="customer-avatar" aria-hidden="true">👩</span>
+                      <span>مریم حسینی</span>
+                    </div>
+                  </td>
+                  <td>کرم ضد آفتاب SPF50</td>
+                  <td><strong>۲۱۲,۰۰۰</strong> تومان</td>
+                  <td><span class="status-badge info">در حال پردازش</span></td>
+                  <td>۱۴۰۳/۰۲/۲۴</td>
+                  <td>
+                    <button class="btn-action" aria-label="مشاهده جزئیات">👁</button>
+                    <button class="btn-action" aria-label="ویرایش">✏️</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#۱۲۸۴۲</span></td>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="customer-avatar" aria-hidden="true">👨</span>
+                      <span>رضا کریمی</span>
+                    </div>
+                  </td>
+                  <td>سرم ضد پیری، لوسیون بدن</td>
+                  <td><strong>۷۱۳,۰۰۰</strong> تومان</td>
+                  <td><span class="status-badge success">تحویل شده</span></td>
+                  <td>۱۴۰۳/۰۲/۲۴</td>
+                  <td>
+                    <button class="btn-action" aria-label="مشاهده جزئیات">👁</button>
+                    <button class="btn-action" aria-label="ویرایش">✏️</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#۱۲۸۴۱</span></td>
+                  <td>
+                    <div class="customer-cell">
+                      <span class="customer-avatar" aria-hidden="true">👩</span>
+                      <span>نیلوفر احمدی</span>
+                    </div>
+                  </td>
+                  <td>ژل شستشو، کرم شب</td>
+                  <td><strong>۵۸۲,۰۰۰</strong> تومان</td>
+                  <td><span class="status-badge error">لغو شده</span></td>
+                  <td>۱۴۰۳/۰۲/۲۳</td>
+                  <td>
+                    <button class="btn-action" aria-label="مشاهده جزئیات">👁</button>
+                    <button class="btn-action" aria-label="ویرایش">✏️</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             ردیف محصولات پرفروش و مشتریان VIP
+             ═══════════════════════════════════════ -->
+        <div class="dashboard-row">
+          <!-- محصولات پرفروش -->
+          <section class="list-card" aria-label="محصولات پرفروش">
+            <div class="card-header">
+              <h2 class="card-title">🏆 محصولات پرفروش</h2>
+              <a href="#" class="btn-text">مشاهده همه →</a>
+            </div>
+            <div class="list-body">
+              <div class="product-item">
+                <div class="product-rank">۱</div>
+                <div class="product-thumb" aria-hidden="true">🧴</div>
+                <div class="product-info">
+                  <strong>کرم ضد آفتاب SPF50</strong>
+                  <span>۱,۲۴۵ فروش</span>
+                </div>
+                <div class="product-sales">
+                  <strong>۲۶۵ میلیون</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-rank">۲</div>
+                <div class="product-thumb" aria-hidden="true">🧼</div>
+                <div class="product-info">
+                  <strong>شامپو ضد ریزش موی چرب</strong>
+                  <span>۹۸۷ فروش</span>
+                </div>
+                <div class="product-sales">
+                  <strong>۳۱۱ میلیون</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-rank">۳</div>
+                <div class="product-thumb" aria-hidden="true">💊</div>
+                <div class="product-info">
+                  <strong>سرم ویتامین C روشن‌کننده</strong>
+                  <span>۸۵۶ فروش</span>
+                </div>
+                <div class="product-sales">
+                  <strong>۳۲۷ میلیون</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-rank">۴</div>
+                <div class="product-thumb" aria-hidden="true">🫙</div>
+                <div class="product-info">
+                  <strong>کرم آبرسان ۲۴ ساعته</strong>
+                  <span>۷۶۵ فروش</span>
+                </div>
+                <div class="product-sales">
+                  <strong>۱۸۸ میلیون</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-rank">۵</div>
+                <div class="product-thumb" aria-hidden="true">🧽</div>
+                <div class="product-info">
+                  <strong>ژل شستشوی پوست چرب</strong>
+                  <span>۶۵۴ فروش</span>
+                </div>
+                <div class="product-sales">
+                  <strong>۱۰۶ میلیون</strong>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- مشتریان VIP -->
+          <section class="list-card" aria-label="مشتریان برتر">
+            <div class="card-header">
+              <h2 class="card-title">👑 مشتریان VIP</h2>
+              <a href="#" class="btn-text">مشاهده همه →</a>
+            </div>
+            <div class="list-body">
+              <div class="customer-item">
+                <div class="customer-avatar vip" aria-hidden="true">👩</div>
+                <div class="customer-info">
+                  <strong>سارا محمدی</strong>
+                  <span>۱۵ سفارش · ۲.۸ میلیون تومان</span>
+                </div>
+                <span class="vip-badge">VIP</span>
+              </div>
+              <div class="customer-item">
+                <div class="customer-avatar vip" aria-hidden="true">👨</div>
+                <div class="customer-info">
+                  <strong>علی رضایی</strong>
+                  <span>۱۲ سفارش · ۲.۱ میلیون تومان</span>
+                </div>
+                <span class="vip-badge">VIP</span>
+              </div>
+              <div class="customer-item">
+                <div class="customer-avatar vip" aria-hidden="true">👩</div>
+                <div class="customer-info">
+                  <strong>مریم حسینی</strong>
+                  <span>۱۰ سفارش · ۱.۹ میلیون تومان</span>
+                </div>
+                <span class="vip-badge">VIP</span>
+              </div>
+              <div class="customer-item">
+                <div class="customer-avatar vip" aria-hidden="true">👨</div>
+                <div class="customer-info">
+                  <strong>رضا کریمی</strong>
+                  <span>۸ سفارش · ۱.۵ میلیون تومان</span>
+                </div>
+                <span class="vip-badge">VIP</span>
+              </div>
+              <div class="customer-item">
+                <div class="customer-avatar vip" aria-hidden="true">👩</div>
+                <div class="customer-info">
+                  <strong>نیلوفر احمدی</strong>
+                  <span>۷ سفارش · ۱.۲ میلیون تومان</span>
+                </div>
+                <span class="vip-badge">VIP</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ═══════════════════════════════════════
+             نوار وضعیت سیستم
+             ═══════════════════════════════════════ -->
+        <section class="status-bar" aria-label="وضعیت سیستم">
+          <div class="status-item">
+            <span class="status-dot online" aria-hidden="true"></span>
+            <span>سرور: <strong>آنلاین</strong></span>
+          </div>
+          <div class="status-item">
+            <span class="status-dot online" aria-hidden="true"></span>
+            <span>پایگاه داده: <strong>متصل</strong></span>
+          </div>
+          <div class="status-item">
+            <span class="status-dot warning" aria-hidden="true"></span>
+            <span>پرداخت: <strong>تأخیر ۲ ثانیه</strong></span>
+          </div>
+          <div class="status-item">
+            <span class="status-dot online" aria-hidden="true"></span>
+            <span>آپلود: <strong>فعال</strong></span>
+          </div>
+          <div class="status-time">
+            <span aria-hidden="true">🕐</span>
+            <span id="server-time">۱۴۰۳/۰۲/۲۵ — ۱۴:۳۰:۴۵</span>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       فایل JS خارجی — هیچ اسکریپت دیگری مجاز نیست
+       ═══════════════════════════════════════ -->
+  <script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <!-- ═══════════════════════════════════════
+       متا تگ‌های پایه — برای سئو و نمایش صحیح
+       ═══════════════════════════════════════ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ═══════════════════════════════════════
+       متا تگ‌های سئو — الزامی برای هر صفحه
+       ═══════════════════════════════════════ -->
+  <title>حساب کاربری — مانلی شاپ</title>
+  <meta name="description" content="پنل مشتری مانلی شاپ — سفارشات، علاقه‌مندی‌ها، آدرس‌ها و امتیازات">
+  <meta name="keywords" content="حساب کاربری، پنل مشتری، مانلی شاپ">
+  <meta name="author" content="مانلی شاپ">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- ═══════════════════════════════════════
+       فایکون‌ها
+       ═══════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- ═══════════════════════════════════════
+       تنها فایل CSS خارجی — هیچ استایل دیگری مجاز نیست
+       ═══════════════════════════════════════ -->
+  <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       هدر سایت
+       ═══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="logo" href="#" aria-label="مانلی شاپ - صفحه اصلی">
+        <div class="logo-icon" aria-hidden="true">💄</div>
+        <div class="logo-text">
+          <strong>مانلی شاپ</strong>
+          <small>مرجع رسمی بهداشتی و آرایشی</small>
+        </div>
+      </a>
+
+      <nav class="header-nav" role="navigation" aria-label="منوی اصلی">
+        <a href="#" class="nav-link">🏠 خانه</a>
+        <a href="../../../../Manli.html" class="nav-link">🛍️ فروشگاه</a>
+        <a href="#" class="nav-link active" aria-current="page">👤 حساب من</a>
+        <a href="#" class="nav-link">🤍 علاقه‌مندی‌ها</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-icon" aria-label="سبد خرید">
+          <span aria-hidden="true">🛒</span>
+          <span class="badge">۳</span>
+        </button>
+        <div class="user-avatar" aria-hidden="true">👩</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       لایه اصلی داشبورد مشتری
+       ═══════════════════════════════════════ -->
+  <div class="customer-layout">
+
+    <!-- ═══════════════════════════════════════
+         سایدبار ناوبری مشتری
+         ═══════════════════════════════════════ -->
+    <aside class="customer-sidebar" role="navigation" aria-label="منوی حساب کاربری">
+      <!-- پروفایل کاربر -->
+      <div class="user-profile-card">
+        <div class="user-avatar-lg" aria-hidden="true">👩</div>
+        <div class="user-info">
+          <strong>سارا محمدی</strong>
+          <span>sara.mohammadi@email.com</span>
+        </div>
+        <div class="vip-status">
+          <span class="vip-badge">👑 عضو VIP</span>
+          <span class="vip-points">۱,۲۴۵ امتیاز</span>
+        </div>
+      </div>
+
+      <!-- منوی ناوبری -->
+      <nav class="customer-nav" aria-label="ناوبری حساب کاربری">
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-link active" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">📊</span>
+              <span class="nav-text">نمای کلی</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">🛒</span>
+              <span class="nav-text">سفارشات من</span>
+              <span class="nav-badge">۵</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">🤍</span>
+              <span class="nav-text">علاقه‌مندی‌ها</span>
+              <span class="nav-badge">۱۲</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">📍</span>
+              <span class="nav-text">آدرس‌ها</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">💳</span>
+              <span class="nav-text">روش‌های پرداخت</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">🎁</span>
+              <span class="nav-text">کد تخفیف‌ها</span>
+              <span class="nav-badge alert">۲</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">⭐</span>
+              <span class="nav-text">امتیازات و جوایز</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">💬</span>
+              <span class="nav-text">پیام‌ها و پشتیبانی</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon" aria-hidden="true">⚙️</span>
+              <span class="nav-text">تنظیمات حساب</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- دکمه خروج -->
+      <button class="btn-logout" aria-label="خروج از حساب کاربری">
+        <span aria-hidden="true">🚪</span>
+        <span>خروج از حساب</span>
+      </button>
+    </aside>
+
+    <!-- ═══════════════════════════════════════
+         محتوای اصلی داشبورد مشتری
+         ═══════════════════════════════════════ -->
+    <main class="customer-main" role="main">
+
+      <!-- ═══════════════════════════════════════
+           سلام و خوش‌آمدگویی
+           ═══════════════════════════════════════ -->
+      <section class="welcome-section" aria-label="خوش آمدید">
+        <div class="welcome-card">
+          <div class="welcome-text">
+            <h1>سلام سارا! 👋</h1>
+            <p>به پنل کاربری خودتان خوش آمدید. آخرین سفارش شما <strong>تحویل داده شده</strong> است.</p>
+          </div>
+          <div class="welcome-actions">
+            <a href="#" class="btn-primary">🛍️ ادامه خرید</a>
+            <a href="#" class="btn-secondary">📦 پیگیری سفارش</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           ردیع خلاصه فعالیت
+           ═══════════════════════════════════════ -->
+      <section class="summary-section" aria-label="خلاصه فعالیت">
+        <div class="summary-grid">
+          <article class="summary-card">
+            <div class="summary-icon orders" aria-hidden="true">🛒</div>
+            <div class="summary-info">
+              <strong>۱۵</strong>
+              <span>سفارش موفق</span>
+            </div>
+          </article>
+          <article class="summary-card">
+            <div class="summary-icon wishlist" aria-hidden="true">🤍</div>
+            <div class="summary-info">
+              <strong>۱۲</strong>
+              <span>علاقه‌مندی</span>
+            </div>
+          </article>
+          <article class="summary-card">
+            <div class="summary-icon points" aria-hidden="true">⭐</div>
+            <div class="summary-info">
+              <strong>۱,۲۴۵</strong>
+              <span>امتیاز VIP</span>
+            </div>
+          </article>
+          <article class="summary-card">
+            <div class="summary-icon savings" aria-hidden="true">💰</div>
+            <div class="summary-info">
+              <strong>۴۸۵,۰۰۰</strong>
+              <span>صرفه‌جویی</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           ردیف سفارشات و پیشرفت VIP
+           ═══════════════════════════════════════ -->
+      <div class="customer-row">
+        <!-- آخرین سفارشات -->
+        <section class="orders-card" aria-label="آخرین سفارشات">
+          <div class="card-header">
+            <h2 class="card-title">🛒 آخرین سفارشات</h2>
+            <a href="#" class="btn-text">مشاهده همه →</a>
+          </div>
+          <div class="orders-list">
+            <article class="order-item">
+              <div class="order-header">
+                <div class="order-info">
+                  <span class="order-id">#۱۲۸۴۵</span>
+                  <span class="order-date">۱۴۰۳/۰۲/۲۵</span>
+                </div>
+                <span class="status-badge success">تحویل شده</span>
+              </div>
+              <div class="order-products">
+                <div class="product-thumb" aria-hidden="true">🧴</div>
+                <div class="product-thumb" aria-hidden="true">🫙</div>
+                <span class="product-more">+۲</span>
+              </div>
+              <div class="order-footer">
+                <span class="order-total"><strong>۶۲۸,۰۰۰</strong> تومان</span>
+                <div class="order-actions">
+                  <button class="btn-sm" aria-label="مشاهده جزئیات">👁 مشاهده</button>
+                  <button class="btn-sm secondary" aria-label="سفارش مجدد">🔄 تکرار</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="order-item">
+              <div class="order-header">
+                <div class="order-info">
+                  <span class="order-id">#۱۲۸۳۲</span>
+                  <span class="order-date">۱۴۰۳/۰۲/۲۰</span>
+                </div>
+                <span class="status-badge warning">در حال ارسال</span>
+              </div>
+              <div class="order-products">
+                <div class="product-thumb" aria-hidden="true">🧼</div>
+                <div class="product-thumb" aria-hidden="true">💊</div>
+              </div>
+              <div class="order-footer">
+                <span class="order-total"><strong>۶۹۷,۰۰۰</strong> تومان</span>
+                <div class="order-actions">
+                  <button class="btn-sm" aria-label="مشاهده جزئیات">👁 مشاهده</button>
+                  <button class="btn-sm secondary" aria-label="پیگیری">📍 پیگیری</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="order-item">
+              <div class="order-header">
+                <div class="order-info">
+                  <span class="order-id">#۱۲۸۱۰</span>
+                  <span class="order-date">۱۴۰۳/۰۲/۱۵</span>
+                </div>
+                <span class="status-badge success">تحویل شده</span>
+              </div>
+              <div class="order-products">
+                <div class="product-thumb" aria-hidden="true">🧽</div>
+                <div class="product-thumb" aria-hidden="true">🌙</div>
+                <div class="product-thumb" aria-hidden="true">🫧</div>
+              </div>
+              <div class="order-footer">
+                <span class="order-total"><strong>۷۱۸,۰۰۰</strong> تومان</span>
+                <div class="order-actions">
+                  <button class="btn-sm" aria-label="مشاهده جزئیات">👁 مشاهده</button>
+                  <button class="btn-sm secondary" aria-label="سفارش مجدد">🔄 تکرار</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- پیشرفت VIP -->
+        <section class="vip-progress-card" aria-label="پیشرفت باشگاه VIP">
+          <div class="card-header">
+            <h2 class="card-title">👑 باشگاه VIP</h2>
+          </div>
+          <div class="vip-body">
+            <div class="vip-level">
+              <span class="level-badge">سطح طلایی</span>
+              <span class="level-next">تا سطح پلاتینیوم: ۲۵۵ امتیاز</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 82%;"></div>
+            </div>
+            <div class="progress-labels">
+              <span>۱,۲۴۵ امتیاز</span>
+              <span>۱,۵۰۰ امتیاز</span>
+            </div>
+
+            <div class="vip-benefits">
+              <h3>مزایای فعلی شما:</h3>
+              <ul class="benefits-list">
+                <li>
+                  <span class="benefit-icon" aria-hidden="true">✅</span>
+                  <span>تخفیف ۱۵٪ روی تمام محصولات</span>
+                </li>
+                <li>
+                  <span class="benefit-icon" aria-hidden="true">✅</span>
+                  <span>ارسال رایگان بدون محدودیت</span>
+                </li>
+                <li>
+                  <span class="benefit-icon" aria-hidden="true">✅</span>
+                  <span>دسترسی زودتر به محصولات جدید</span>
+                </li>
+                <li>
+                  <span class="benefit-icon" aria-hidden="true">🔒</span>
+                  <span>مشاوره رایگان پوست (سطح بعدی)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="vip-cta">
+              <p>با خرید <strong>۲۵۵,۰۰۰ تومان</strong> دیگر به سطح پلاتینیوم برسید!</p>
+              <a href="#" class="btn-vip-shop">🛍️ خرید و ارتقا</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════════════════════════════
+           علاقه‌مندی‌ها
+           ═══════════════════════════════════════ -->
+      <section class="wishlist-section" aria-label="محصولات مورد علاقه">
+        <div class="card-header">
+          <h2 class="card-title">🤍 محصولات مورد علاقه</h2>
+          <a href="#" class="btn-text">مشاهده همه →</a>
+        </div>
+        <div class="wishlist-grid">
+          <article class="wishlist-item">
+            <div class="wish-thumb" aria-hidden="true">🧴</div>
+            <div class="wish-info">
+              <strong>کرم ضد آفتاب SPF50</strong>
+              <span class="wish-price">۲۱۲,۰۰۰ تومان</span>
+              <span class="wish-old-price">۲۶۵,۰۰۰ تومان</span>
+            </div>
+            <div class="wish-actions">
+              <button class="btn-wish-add" aria-label="افزودن به سبد خرید">🛒</button>
+              <button class="btn-wish-remove" aria-label="حذف از علاقه‌مندی‌ها">❌</button>
+            </div>
+          </article>
+
+          <article class="wishlist-item">
+            <div class="wish-thumb" aria-hidden="true">💊</div>
+            <div class="wish-info">
+              <strong>سرم ویتامین C روشن‌کننده</strong>
+              <span class="wish-price">۳۸۲,۰۰۰ تومان</span>
+              <span class="wish-old-price">۴۵۰,۰۰۰ تومان</span>
+            </div>
+            <div class="wish-actions">
+              <button class="btn-wish-add" aria-label="افزودن به سبد خرید">🛒</button>
+              <button class="btn-wish-remove" aria-label="حذف از علاقه‌مندی‌ها">❌</button>
+            </div>
+          </article>
+
+          <article class="wishlist-item">
+            <div class="wish-thumb" aria-hidden="true">🌺</div>
+            <div class="wish-info">
+              <strong>سرم ضد پیری هیالورونیک</strong>
+              <span class="wish-price">۵۴۸,۰۰۰ تومان</span>
+            </div>
+            <div class="wish-actions">
+              <button class="btn-wish-add" aria-label="افزودن به سبد خرید">🛒</button>
+              <button class="btn-wish-remove" aria-label="حذف از علاقه‌مندی‌ها">❌</button>
+            </div>
+          </article>
+
+          <article class="wishlist-item">
+            <div class="wish-thumb" aria-hidden="true">🫧</div>
+            <div class="wish-info">
+              <strong>فوم شستشوی ملایم</strong>
+              <span class="wish-price">۱۳۶,۰۰۰ تومان</span>
+              <span class="wish-old-price">۱۹۵,۰۰۰ تومان</span>
+            </div>
+            <div class="wish-actions">
+              <button class="btn-wish-add" aria-label="افزودن به سبد خرید">🛒</button>
+              <button class="btn-wish-remove" aria-label="حذف از علاقه‌مندی‌ها">❌</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           کدهای تخفیف
+           ═══════════════════════════════════════ -->
+      <section class="coupons-section" aria-label="کدهای تخفیف">
+        <div class="card-header">
+          <h2 class="card-title">🎁 کدهای تخفیف من</h2>
+        </div>
+        <div class="coupons-grid">
+          <article class="coupon-card active">
+            <div class="coupon-header">
+              <span class="coupon-code">VIP15</span>
+              <span class="coupon-badge">فعال</span>
+            </div>
+            <div class="coupon-body">
+              <strong>۱۵٪ تخفیف VIP</strong>
+              <span>قابل استفاده روی تمام محصولات</span>
+            </div>
+            <div class="coupon-footer">
+              <span class="coupon-expiry">⏰ تا ۱۴۰۳/۰۳/۱۵</span>
+              <button class="btn-copy" aria-label="کپی کد تخفیف">📋 کپی</button>
+            </div>
+          </article>
+
+          <article class="coupon-card active">
+            <div class="coupon-header">
+              <span class="coupon-code">SPRING20</span>
+              <span class="coupon-badge">فعال</span>
+            </div>
+            <div class="coupon-body">
+              <strong>۲۰٪ تخفیف بهاره</strong>
+              <span>حداقل خرید ۵۰۰ هزار تومان</span>
+            </div>
+            <div class="coupon-footer">
+              <span class="coupon-expiry">⏰ تا ۱۴۰۳/۰۲/۳۱</span>
+              <button class="btn-copy" aria-label="کپی کد تخفیف">📋 کپی</button>
+            </div>
+          </article>
+
+          <article class="coupon-card used">
+            <div class="coupon-header">
+              <span class="coupon-code">WELCOME10</span>
+              <span class="coupon-badge used">استفاده شده</span>
+            </div>
+            <div class="coupon-body">
+              <strong>۱۰٪ تخفیف خوش‌آمد</strong>
+              <span>برای اولین خرید</span>
+            </div>
+            <div class="coupon-footer">
+              <span class="coupon-expiry">✅ استفاده شده در ۱۴۰۳/۰۱/۱۰</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           آدرس‌های ذخیره شده
+           ═══════════════════════════════════════ -->
+      <section class="addresses-section" aria-label="آدرس‌های من">
+        <div class="card-header">
+          <h2 class="card-title">📍 آدرس‌های من</h2>
+          <button class="btn-add-address" aria-label="افزودن آدرس جدید">
+            <span aria-hidden="true">+</span>
+            <span>افزودن آدرس</span>
+          </button>
+        </div>
+        <div class="addresses-grid">
+          <article class="address-card default">
+            <div class="address-header">
+              <span class="address-tag default">پیش‌فرض</span>
+              <div class="address-actions">
+                <button class="btn-address-action" aria-label="ویرایش آدرس">✏️</button>
+                <button class="btn-address-action" aria-label="حذف آدرس">🗑️</button>
+              </div>
+            </div>
+            <div class="address-body">
+              <strong>سارا محمدی</strong>
+              <p>تهران، خیابان ولیعصر، کوچه ۱۲، پلاک ۴۵، واحد ۲</p>
+              <p>کد پستی: ۱۵۶۷۸۹۱۲۳۴</p>
+              <p>📞 ۰۹۱۲۳۴۵۶۷۸۹</p>
+            </div>
+          </article>
+
+          <article class="address-card">
+            <div class="address-header">
+              <span class="address-tag">محل کار</span>
+              <div class="address-actions">
+                <button class="btn-address-action" aria-label="ویرایش آدرس">✏️</button>
+                <button class="btn-address-action" aria-label="حذف آدرس">🗑️</button>
+              </div>
+            </div>
+            <div class="address-body">
+              <strong>سارا محمدی</strong>
+              <p>تهران، خیابان انقلاب، ساختمان پارس، طبقه ۳</p>
+              <p>کد پستی: ۱۵۶۷۸۹۱۲۳۵</p>
+              <p>📞 ۰۹۱۲۳۴۵۶۷۸۹</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           توصیه‌های هوشمندانه
+           ═══════════════════════════════════════ -->
+      <section class="recommendations-section" aria-label="توصیه‌های شخصی‌سازی شده">
+        <div class="card-header">
+          <h2 class="card-title">💡 پیشنهادهای ویژه شما</h2>
+        </div>
+        <div class="recommendations-grid">
+          <article class="rec-card">
+            <div class="rec-thumb" aria-hidden="true">🧴</div>
+            <div class="rec-info">
+              <strong>کرم آبرسان ۲۴ ساعته</strong>
+              <span>بر اساس خریدهای قبلی شما</span>
+              <span class="rec-price">۲۴۶,۰۰۰ تومان</span>
+            </div>
+            <button class="btn-rec-add" aria-label="افزودن به سبد خرید">+</button>
+          </article>
+          <article class="rec-card">
+            <div class="rec-thumb" aria-hidden="true">🧼</div>
+            <div class="rec-info">
+              <strong>شامپو تقویت‌کننده مو</strong>
+              <span>مکمل محصولات فعلی شما</span>
+              <span class="rec-price">۲۸۵,۰۰۰ تومان</span>
+            </div>
+            <button class="btn-rec-add" aria-label="افزودن به سبد خرید">+</button>
+          </article>
+          <article class="rec-card">
+            <div class="rec-thumb" aria-hidden="true">🌸</div>
+            <div class="rec-info">
+              <strong>عطر زنانه گلدن اسکین</strong>
+              <span>محبوب در دسته آرایشی</span>
+              <span class="rec-price">۴۵۰,۰۰۰ تومان</span>
+            </div>
+            <button class="btn-rec-add" aria-label="افزودن به سبد خرید">+</button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       فوتر
+       ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span>© ۱۴۰۳ مانلی شاپ — تمامی حقوق محفوظ است</span>
+      <div class="footer-links">
+        <a href="#">پشتیبانی</a>
+        <a href="#">حریم خصوصی</a>
+        <a href="#">شرایط استفاده</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       اسکریپت‌های داشبورد مشتری
+       ═══════════════════════════════════════ -->
+  <script src="customer.js"></script>
+
+</body>
+</html>

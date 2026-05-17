@@ -1,0 +1,518 @@
+/* ═════════════════════════════════════════════════════════
+   استایل داشبورد مشتری
+   ═════════════════════════════════════════════════════════
+   فایل: customer.css
+   توصیف: استایل‌های خصوصی برای صفحه مشتری
+   ===================================================== */
+
+/* ─────────────────────────────────────────────────────
+   Layout
+   ───────────────────────────────────────────────────── */
+.customer-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.customer-sidebar {
+  width: 260px;
+  background-color: var(--bg-card);
+  border-left: 1px solid var(--border);
+  padding: var(--space-6) 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.customer-main {
+  flex: 1;
+  padding: var(--space-6);
+}
+
+/* ─────────────────────────────────────────────────────
+   سایدبار
+   ───────────────────────────────────────────────────── */
+.sidebar-header {
+  padding: 0 var(--space-6) var(--space-6);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-6);
+}
+
+.sidebar-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sidebar-user-name {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sidebar-user-email {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.sidebar-nav {
+  padding: 0 var(--space-3);
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background-color: var(--bg-section);
+  color: var(--text-primary);
+}
+
+.sidebar-link.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.sidebar-icon {
+  font-size: var(--fs-lg);
+}
+
+/* ─────────────────────────────────────────────────────
+   محتوای اصلی
+   ───────────────────────────────────────────────────── */
+.customer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.page-title {
+  font-size: var(--fs-3xl);
+  color: var(--text-primary);
+}
+
+.page-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+/* ─────────────────────────────────────────────────────
+   کارت‌های خلاصه
+   ───────────────────────────────────────────────────── */
+.profile-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.profile-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.profile-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.profile-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-3xl);
+  flex-shrink: 0;
+}
+
+.profile-card-content {
+  flex: 1;
+}
+
+.profile-card-label {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.profile-card-value {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.profile-card-unit {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* ─────────────────────────────────────────────────────
+   لیست سفارشات
+   ───────────────────────────────────────────────────── */
+.orders-section {
+  margin-bottom: var(--space-8);
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.order-item {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  transition: all var(--transition-base);
+}
+
+.order-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.order-id {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--primary);
+  font-family: monospace;
+}
+
+.order-status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.order-status.pending {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.order-status.processing {
+  background-color: var(--info-bg);
+  color: var(--info);
+}
+
+.order-status.shipped {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.order-status.delivered {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.order-details {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.order-detail-label {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-detail-value {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.order-price {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ─────────────────────────────────────────────────────
+   فرم ویرایش پروفایل
+   ───────────────────────────────────────────────────── */
+.profile-form {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-section {
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--border);
+}
+
+.form-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.form-section-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.form-group {
+  margin-bottom: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  font-size: var(--fs-base);
+  transition: all var(--transition-base);
+  font-family: var(--font-sans);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.btn-save {
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn-save:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-cancel {
+  padding: var(--space-3) var(--space-6);
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn-cancel:hover {
+  background-color: var(--primary-light);
+}
+
+/* ─────────────────────────────────────────────────────
+   Wishlist
+   ───────────────────────────────────────────────────── */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.wishlist-item {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  transition: all var(--transition-base);
+}
+
+.wishlist-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.wishlist-image {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(
+    135deg,
+    var(--primary-light) 0%,
+    var(--bg-section) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-2xl);
+  flex-shrink: 0;
+}
+
+.wishlist-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.wishlist-name {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.wishlist-price {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* ─────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .customer-layout {
+    flex-direction: column;
+  }
+
+  .customer-sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .profile-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-group-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 480px) {
+  .profile-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-group-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wishlist-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .customer-header {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wishlist-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
