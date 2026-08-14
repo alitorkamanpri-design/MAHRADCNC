@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tasker — تقویم</title>
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="https://c7n.ir/fonts/sahel/load.css" crossorigin="anonymous">
+<!-- All styles (recommended) -->
+<link rel="stylesheet" href="https://c7n.ir/icons/fontawesome/6.7.2/css/all.min.css"></head>
+<body class="bg-bg-app">
+
+<div class="page-container">
+
+  <!-- ── Header ── -->
+  <header class="flex items-center justify-between px-lg pt-lg pb-md">
+    <div class="flex items-center gap-sm">
+      <h1 class="text-2xl font-bold text-text-primary" id="calMonthTitle">مرداد ۱۴۰۵</h1>
+      <button id="monthDropBtn" class="btn-icon">
+        <i class="fa-solid fa-chevron-down text-sm text-text-secondary"></i>
+      </button>
+    </div>
+    <div class="flex items-center gap-sm">
+      <button id="prevMonthBtn" class="btn-icon">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+      </button>
+      <button id="nextMonthBtn" class="btn-icon">
+        <i class="fa-solid fa-chevron-left text-sm"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── Date Strip ── -->
+  <div class="px-lg pb-lg">
+    <div id="dateStrip" class="scroll-x flex gap-2 pb-1">
+      <!-- rendered by calendar.js -->
+    </div>
+  </div>
+
+  <!-- ── Timeline ── -->
+  <div class="px-lg pb-4">
+    <div class="section-header mb-md">
+      <h2 class="section-title" id="timelineTitle">تسک‌های امروز</h2>
+      <span id="timelineCount" class="badge-medium hidden">0</span>
+    </div>
+    <div id="timelineList" class="flex flex-col gap-md">
+      <!-- rendered by calendar.js -->
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FAB ── -->
+<button class="btn-fab fixed z-50 bottom-24 left-1/2 -translate-x-1/2" id="fabBtn">
+  <i class="fa-solid fa-plus"></i>
+</button>
+
+<!-- ── Bottom Navigation ── -->
+<nav class="fixed bottom-0 left-0 right-0 bg-bg-nav z-40" style="box-shadow:0 -2px 16px rgba(15,23,42,0.06)">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-item" data-page="home">
+      <i class="fa-solid fa-house text-xl"></i>
+      <span>خانه</span>
+    </a>
+    <a href="/src/pages/calendar.html" class="nav-item" data-page="calendar">
+      <i class="fa-solid fa-calendar text-xl"></i>
+      <span>تقویم</span>
+    </a>
+    <a href="/src/pages/tasks.html" class="nav-item" data-page="tasks">
+      <i class="fa-solid fa-list-check text-xl"></i>
+      <span>تسک</span>
+    </a>
+    <a href="/src/pages/profile.html" class="nav-item" data-page="profile">
+      <i class="fa-solid fa-user text-xl"></i>
+      <span>پروفایل</span>
+    </a>
+  </div>
+</nav>
+
+<script type="module" src="/src/js/calendar.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js')</script>
+</body>
+</html>

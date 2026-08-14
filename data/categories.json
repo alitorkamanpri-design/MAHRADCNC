@@ -1,0 +1,90 @@
+[
+  {
+    "id": "mechanical-rail",
+    "name": "ریل و واگن",
+    "slug": "rail-wagon",
+    "parent": "mechanical",
+    "parentName": "قطعات مکانیکی",
+    "icon": "fa-solid fa-grip-lines",
+    "image": "img/1.png",
+    "description": "ریل خطی و واگن‌های دقیق CNC",
+    "facetKeys": ["سری", "سایز", "نوع", "طول"]
+  },
+  {
+    "id": "mechanical-ballscrew",
+    "name": "بال اسکرو و مهره",
+    "slug": "ballscrew",
+    "parent": "mechanical",
+    "parentName": "قطعات مکانیکی",
+    "icon": "fa-solid fa-rotate",
+    "image": "img/8.png",
+    "description": "پیچ و مهره بال اسکرو و ساپورت",
+    "facetKeys": ["قطر", "گام", "طول", "نوع", "مدل"]
+  },
+  {
+    "id": "mechanical-bearing",
+    "name": "بلبرینگ خطی",
+    "slug": "linear-bearing",
+    "parent": "mechanical",
+    "parentName": "قطعات مکانیکی",
+    "icon": "fa-solid fa-circle-notch",
+    "image": "img/12.png",
+    "description": "بلبرینگ شفت و خطی",
+    "facetKeys": ["قطر", "مدل", "نوع"]
+  },
+  {
+    "id": "mechanical-gearbox",
+    "name": "گیربکس",
+    "slug": "gearbox",
+    "parent": "mechanical",
+    "parentName": "قطعات مکانیکی",
+    "icon": "fa-solid fa-gears",
+    "image": "img/20.png",
+    "description": "گیربکس خورشیدی و حلزونی",
+    "facetKeys": ["سایز", "نسبت", "توان"]
+  },
+  {
+    "id": "electronic-spindle",
+    "name": "اسپیندل موتور",
+    "slug": "spindle",
+    "parent": "electronic",
+    "parentName": "قطعات الکترونیکی",
+    "icon": "fa-solid fa-bolt",
+    "image": "img/25.png",
+    "description": "اسپیندل موتورهای صنعتی",
+    "facetKeys": ["توان", "دور", "خنک‌کاری", "برند"]
+  },
+  {
+    "id": "electronic-stepper",
+    "name": "استپ موتور و درایو",
+    "slug": "stepper",
+    "parent": "electronic",
+    "parentName": "قطعات الکترونیکی",
+    "icon": "fa-solid fa-microchip",
+    "image": "img/28.png",
+    "description": "استپ موتور، درایو و سروو",
+    "facetKeys": ["گشتاور", "توان", "نما", "فاز", "جریان", "برند"]
+  },
+  {
+    "id": "electronic-controller",
+    "name": "کنترلر",
+    "slug": "controller",
+    "parent": "electronic",
+    "parentName": "قطعات الکترونیکی",
+    "icon": "fa-solid fa-server",
+    "image": "img/32.png",
+    "description": "کنترلر DSP، Mach3 و فایبر",
+    "facetKeys": ["مدل", "توان", "ولتاژ", "برند"]
+  },
+  {
+    "id": "accessories",
+    "name": "تجهیزات جانبی",
+    "slug": "accessories",
+    "parent": "accessory",
+    "parentName": "قطعات جانبی",
+    "icon": "fa-solid fa-toolbox",
+    "image": "img/35.png",
+    "description": "کولت، براکت، انرژی چین و سنسور",
+    "facetKeys": ["نوع", "برند", "قطر", "محور"]
+  }
+]

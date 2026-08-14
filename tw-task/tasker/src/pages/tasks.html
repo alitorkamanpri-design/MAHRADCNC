@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tasker — تسک‌ها</title>
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="https://c7n.ir/fonts/sahel/load.css" crossorigin="anonymous">
+<!-- All styles (recommended) -->
+<link rel="stylesheet" href="https://c7n.ir/icons/fontawesome/6.7.2/css/all.min.css"></head>
+<body class="bg-bg-app">
+
+<div class="page-container">
+
+  <!-- ── Header ── -->
+  <header class="flex items-center justify-between px-lg pt-lg pb-md">
+    <div class="flex items-center gap-sm">
+      <h1 class="text-2xl font-bold text-text-primary">تسک‌ها</h1>
+      <span id="taskCountBadge" class="badge-medium text-sm px-2 py-0.5">0</span>
+    </div>
+    <button class="btn-primary py-2 px-md text-sm gap-1" id="addTaskHeaderBtn">
+      <i class="fa-solid fa-plus text-xs"></i>افزودن
+    </button>
+  </header>
+
+  <!-- ── Search ── -->
+  <div class="px-lg pb-md">
+    <div class="bg-bg-card rounded-2xl shadow-sm flex items-center gap-md px-lg border border-border-light">
+      <i class="fa-solid fa-magnifying-glass text-text-muted text-sm shrink-0"></i>
+      <input id="searchInput" type="search" class="flex-1 bg-transparent py-md text-base text-text-primary placeholder:text-text-muted outline-none" placeholder="جستجوی تسک...">
+    </div>
+  </div>
+
+  <!-- ── Filter Tabs ── -->
+  <div class="px-lg pb-md">
+    <div class="scroll-x flex gap-sm py-1">
+      <button class="tab-btn active" data-filter="all">همه</button>
+      <button class="tab-btn" data-filter="active">فعال</button>
+      <button class="tab-btn" data-filter="completed">تکمیل شده</button>
+      <button class="tab-btn" data-filter="high">اولویت بالا</button>
+    </div>
+  </div>
+
+  <!-- ── Task List ── -->
+  <div id="taskList" class="px-lg flex flex-col gap-md pb-4">
+    <!-- rendered by tasks.js -->
+  </div>
+
+</div>
+
+<!-- ── FAB ── -->
+<button class="btn-fab fixed z-50 bottom-24 left-1/2 -translate-x-1/2" id="fabBtn">
+  <i class="fa-solid fa-plus"></i>
+</button>
+
+<!-- ── Bottom Navigation ── -->
+<nav class="fixed bottom-0 left-0 right-0 bg-bg-nav z-40" style="box-shadow:0 -2px 16px rgba(15,23,42,0.06)">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-item" data-page="home">
+      <i class="fa-solid fa-house text-xl"></i>
+      <span>خانه</span>
+    </a>
+    <a href="/src/pages/calendar.html" class="nav-item" data-page="calendar">
+      <i class="fa-solid fa-calendar text-xl"></i>
+      <span>تقویم</span>
+    </a>
+    <a href="/src/pages/tasks.html" class="nav-item" data-page="tasks">
+      <i class="fa-solid fa-list-check text-xl"></i>
+      <span>تسک</span>
+    </a>
+    <a href="/src/pages/profile.html" class="nav-item" data-page="profile">
+      <i class="fa-solid fa-user text-xl"></i>
+      <span>پروفایل</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ── Delete Confirm Dialog ── -->
+<div id="deleteDialog" class="fixed inset-0 z-50 hidden flex items-center justify-center px-lg">
+  <div class="absolute inset-0 backdrop-blur-sm" style="background:rgba(15,23,42,0.45)" id="delBackdrop"></div>
+  <div class="relative bg-bg-card rounded-3xl shadow-lg z-10 p-2xl w-full max-w-sm animate-scale-in">
+    <div class="flex flex-col items-center gap-md text-center">
+      <div class="w-14 h-14 rounded-full bg-danger-bg flex items-center justify-center">
+        <i class="fa-solid fa-trash text-danger text-xl"></i>
+      </div>
+      <h3 class="text-lg font-bold text-text-primary">حذف تسک</h3>
+      <p class="text-sm text-text-muted">آیا مطمئن هستید که می‌خواهید این تسک را حذف کنید؟</p>
+      <div class="flex gap-sm w-full mt-sm">
+        <button class="btn-secondary flex-1 py-md" id="delCancelBtn">لغو</button>
+        <button class="btn-danger flex-1 py-md" id="delConfirmBtn">حذف</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/src/js/tasks.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js')</script>
+</body>
+</html>

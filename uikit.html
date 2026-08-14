@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIKit — MahradCNC</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-bg-secondary text-text-primary min-h-screen">
+  <div class="max-w-7xl mx-auto px-lg md:px-3xl py-4xl">
+    <header class="mb-4xl">
+      <p class="text-sm text-accent font-medium mb-sm">MahradCNC Design System</p>
+      <h1 class="text-3xl font-bold text-text-primary leading-tight">UIKit صنعتی</h1>
+      <p class="text-base text-text-secondary mt-md leading-relaxed max-w-2xl">پالت نارنجی صنعتی، بنفش و سفید — فونت ساحل. مرجع کامپوننت‌های ثابت پروژه.</p>
+      <a href="index.html" class="inline-flex mt-xl text-sm text-primary hover:text-primary-hover">← بازگشت به فروشگاه</a>
+    </header>
+
+    <!-- Colors -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">رنگ‌ها</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-lg">
+        <div class="rounded-xl overflow-hidden border border-border-light shadow-sm">
+          <div class="h-20 bg-primary"></div>
+          <div class="p-md text-sm bg-bg-primary">Primary #E85D04</div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-border-light shadow-sm">
+          <div class="h-20 bg-accent"></div>
+          <div class="p-md text-sm bg-bg-primary">Accent #6D28D9</div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-border-light shadow-sm">
+          <div class="h-20 bg-nav"></div>
+          <div class="p-md text-sm bg-bg-primary">Nav #334155</div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-border-light shadow-sm">
+          <div class="h-20 bg-info"></div>
+          <div class="p-md text-sm bg-bg-primary">Info (جدید)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">دکمه‌ها</h2>
+      <div class="flex flex-wrap gap-lg items-center">
+        <button type="button" class="bg-primary text-white px-xl py-md rounded-lg font-medium text-base leading-normal hover:-translate-y-0.5 hover:shadow-button transition-all duration-200 inline-flex items-center gap-2">Primary</button>
+        <button type="button" class="bg-accent text-white px-xl py-md rounded-lg font-medium text-base leading-normal hover:opacity-90 transition-all duration-200 inline-flex items-center gap-2">Accent</button>
+        <button type="button" class="bg-bg-secondary text-text-secondary border border-border-medium px-xl py-md rounded-lg font-medium text-base leading-normal hover:bg-bg-tertiary transition-all duration-200 inline-flex items-center gap-2">Secondary</button>
+        <button type="button" class="bg-danger text-white px-xl py-md rounded-lg font-medium text-base leading-normal hover:opacity-90 transition-all duration-200 inline-flex items-center gap-2">Danger</button>
+        <button type="button" class="bg-primary text-white w-10 h-10 rounded-lg inline-flex items-center justify-center hover:-translate-y-0.5 hover:shadow-button transition-all duration-200" aria-label="افزودن"><i class="fa-solid fa-plus"></i></button>
+      </div>
+    </section>
+
+    <!-- Badges -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">Badge</h2>
+      <div class="flex flex-wrap gap-md">
+        <span class="inline-flex items-center gap-1.5 bg-success-soft text-success px-2.5 py-1 rounded-md text-xs font-medium">موجود</span>
+        <span class="inline-flex items-center gap-1.5 bg-danger-soft text-danger px-2.5 py-1 rounded-md text-xs font-medium">ناموجود</span>
+        <span class="inline-flex items-center gap-1.5 bg-primary-soft text-primary px-2.5 py-1 rounded-md text-xs font-medium">تخفیف</span>
+        <span class="inline-flex items-center gap-1.5 bg-accent-soft text-accent px-2.5 py-1 rounded-md text-xs font-medium">پرفروش</span>
+      </div>
+    </section>
+
+    <!-- Inputs -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">ورودی</h2>
+      <div class="max-w-lg border border-border-medium rounded-xl overflow-hidden focus-within:border-primary focus-within:shadow-focus transition-all duration-200">
+        <div class="flex items-stretch">
+          <label class="bg-bg-secondary border-l border-border-light min-w-[100px] px-lg py-3.5 text-sm text-text-secondary flex items-center leading-normal">نام</label>
+          <input class="flex-1 px-lg py-3.5 text-base text-text-primary outline-none bg-transparent leading-normal" placeholder="نمونه">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards demo -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">کارت محصول</h2>
+      <div id="uikit-cards" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-lg"></div>
+    </section>
+
+    <!-- Typography -->
+    <section class="mb-5xl">
+      <h2 class="text-2xl font-semibold mb-2xl">تایپوگرافی ساحل</h2>
+      <div class="bg-bg-primary border border-border-light rounded-xl p-3xl space-y-md">
+        <h1 class="text-3xl font-bold leading-tight">عنوان اصلی صفحه</h1>
+        <h2 class="text-2xl font-semibold leading-snug">عنوان بخش</h2>
+        <h3 class="text-xl font-semibold leading-snug">عنوان کارت</h3>
+        <p class="text-base text-text-primary leading-relaxed">متن اصلی بدنه با فونت ساحل برای خوانایی فارسی.</p>
+        <p class="text-sm text-text-secondary leading-normal">متن کمکی ثانویه</p>
+        <span class="text-xs text-text-muted">برچسب کوچک / SKU</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    Mahrad.loadJSON('data/products.json').then((products) => {
+      const host = document.getElementById('uikit-cards');
+      host.innerHTML = products.slice(0, 4).map(Mahrad.renderProductCard).join('');
+      Mahrad.bindCardActions(host);
+    });
+  </script>
+</body>
+</html>

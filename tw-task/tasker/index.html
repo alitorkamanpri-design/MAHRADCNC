@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tasker — خانه</title>
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Tasker">
+  <link rel="stylesheet" href="https://c7n.ir/fonts/sahel/load.css" crossorigin="anonymous">
+<!-- All styles (recommended) -->
+<link rel="stylesheet" href="https://c7n.ir/icons/fontawesome/6.7.2/css/all.min.css"></head>
+<body class="bg-bg-app">
+
+<div class="page-container">
+
+  <!-- ── Header ── -->
+  <header class="flex items-center justify-between px-lg pt-lg pb-md">
+    <a href="/src/pages/profile.html" id="headerAvatar"
+       class="relative w-11 h-11 rounded-full overflow-hidden border-2 border-white shadow-sm flex items-center justify-center bg-primary/10 text-primary text-lg font-bold shrink-0">
+      <i class="fa-solid fa-user" id="avatarIcon"></i>
+      <img id="avatarImg" class="w-full h-full object-cover hidden" alt="آواتار">
+    </a>
+    <button class="w-10 h-10 rounded-full bg-bg-card shadow-sm flex items-center justify-center text-text-secondary hover:text-primary transition-colors duration-200">
+      <i class="fa-solid fa-bell text-lg"></i>
+    </button>
+  </header>
+
+  <!-- ── Greeting ── -->
+  <div class="px-lg pb-xl">
+    <p class="text-base text-text-muted mb-0.5" id="greetText">صبح بخیر،</p>
+    <h1 class="text-3xl font-bold text-text-primary" id="greetName">کاربر 👋</h1>
+    <p class="text-sm text-text-muted mt-1" id="todayDateText"></p>
+  </div>
+
+  <!-- ── Stats Row ── -->
+  <div class="px-lg pb-xl grid grid-cols-3 gap-md">
+    <div class="stat-card bg-stat-upcoming rounded-2xl">
+      <p class="text-xs font-medium text-white/80">پیش رو</p>
+      <p class="text-2xl font-bold text-white" id="statUpcoming">0</p>
+      <p class="text-xs text-white/70">تسک</p>
+    </div>
+    <div class="stat-card bg-stat-today rounded-2xl">
+      <p class="text-xs font-medium text-white/80">امروز</p>
+      <p class="text-2xl font-bold text-white" id="statToday">0</p>
+      <p class="text-xs text-white/70">تسک</p>
+    </div>
+    <div class="stat-card bg-stat-completed rounded-2xl">
+      <p class="text-xs font-medium text-white/80">تکمیل</p>
+      <p class="text-2xl font-bold text-white" id="statCompleted">0</p>
+      <p class="text-xs text-white/70">تسک</p>
+    </div>
+  </div>
+
+  <!-- ── Recent Tasks ── -->
+  <div class="px-lg">
+    <div class="section-header mb-md">
+      <h2 class="section-title">آخرین تسک‌ها</h2>
+      <a href="/src/pages/tasks.html" class="text-sm font-medium text-primary hover:underline">مشاهده همه</a>
+    </div>
+    <div id="recentTasksList" class="flex flex-col gap-md pb-4">
+      <!-- rendered by home.js -->
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FAB ── -->
+<button class="btn-fab fixed z-50 bottom-24 left-1/2 -translate-x-1/2" id="fabBtn">
+  <i class="fa-solid fa-plus"></i>
+</button>
+
+<!-- ── Bottom Navigation ── -->
+<nav class="fixed bottom-0 left-0 right-0 bg-bg-nav z-40" style="box-shadow:0 -2px 16px rgba(15,23,42,0.06)">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-item" data-page="home">
+      <i class="fa-solid fa-house text-xl"></i>
+      <span>خانه</span>
+    </a>
+    <a href="/src/pages/calendar.html" class="nav-item" data-page="calendar">
+      <i class="fa-solid fa-calendar text-xl"></i>
+      <span>تقویم</span>
+    </a>
+    <a href="/src/pages/tasks.html" class="nav-item" data-page="tasks">
+      <i class="fa-solid fa-list-check text-xl"></i>
+      <span>تسک</span>
+    </a>
+    <a href="/src/pages/profile.html" class="nav-item" data-page="profile">
+      <i class="fa-solid fa-user text-xl"></i>
+      <span>پروفایل</span>
+    </a>
+  </div>
+</nav>
+
+<script type="module" src="/src/js/home.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js')</script>
+</body>
+</html>
