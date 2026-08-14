@@ -3,330 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اضافه‌کار — محاسبه اضافه‌کاری</title>
-  <link rel="stylesheet" href="https://c7n.ir/fonts/sahel/load.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="فروشگاه قطعات CNC مهراد — ریل، واگن، اسپیندل و کنترلر">
+  <meta property="og:title" content="MahradCNC — فروش قطعات سی‌ان‌سی">
+  <meta property="og:description" content="کاتالوگ صنعتی قطعات CNC با SKU و مشخصات فنی">
+  <meta property="og:image" content="/MAHRADCNC/assets/icon-eyVgWEJK.png">
+  <link rel="icon" href="/MAHRADCNC/assets/icon-eyVgWEJK.png" type="image/png">
+    <title>MahradCNC — فروش قطعات سی‌ان‌سی</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" crossorigin href="/MAHRADCNC/assets/main-CeXhcROz.css">
 </head>
-<body>
+<body class="bg-bg-secondary text-text-primary min-h-screen flex flex-col">
+  <div id="site-header"></div>
 
-<!-- ===== ONBOARDING ===== -->
-<div id="page-onboard" class="page active">
-  <div class="onboard">
-    <div class="onboard__slides">
-
-      <!-- Slide 1: Welcome -->
-      <div class="slide active" id="slide-0">
-        <div class="slide__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-        </div>
-        <div>
-          <div class="slide__title">خوش آمدید به<br><span>اضافه‌کار</span></div>
-        </div>
-        <div class="slide__desc">
-          ابزار هوشمند محاسبه و مدیریت اضافه‌کاری شما.<br>
-          ساده، سریع و دقیق.
+  <main class="flex-1">
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-[85vh] md:min-h-[90vh] flex items-end overflow-hidden bg-text-primary" aria-label="معرفی">
+      <img id="hero-image" src="/MAHRADCNC/assets/18-DxAazFZy.png" alt="قطعات صنعتی CNC مهراد" class="absolute inset-0 w-full h-full object-cover opacity-60" fetchpriority="high">
+      <div class="absolute inset-0 bg-gradient-to-t from-text-primary via-text-primary/70 to-text-primary/20"></div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-lg md:px-3xl pb-4xl md:pb-5xl pt-5xl">
+        <p id="hero-brand" class="text-primary text-lg md:text-xl font-bold tracking-wide mb-md">MahradCNC</p>
+        <h1 id="hero-headline" class="text-3xl md:text-4xl font-bold text-white leading-tight max-w-2xl mb-lg">قطعات دقیق CNC برای تولید حرفه‌ای</h1>
+        <p id="hero-subtitle" class="text-base md:text-lg text-white/80 leading-relaxed max-w-xl mb-2xl">ریل، واگن، اسپیندل و کنترلر — اصالت کالا و ارسال سریع</p>
+        <div class="flex flex-wrap gap-md" id="hero-ctas">
+          <a href="shop.html" class="bg-primary text-white px-xl py-md rounded-lg font-medium text-base leading-normal hover:-translate-y-0.5 hover:shadow-button transition-all duration-200 inline-flex items-center gap-2">مشاهده فروشگاه</a>
+          <a href="tel:02133980931" class="bg-white/10 text-white border border-white/30 px-xl py-md rounded-lg font-medium text-base leading-normal hover:bg-white/20 transition-all duration-200 inline-flex items-center gap-2">مشاوره تخصصی</a>
         </div>
       </div>
+    </section>
 
-      <!-- Slide 2: Features -->
-      <div class="slide" id="slide-1">
-        <div class="slide__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="7" rx="1"/>
-            <rect x="14" y="3" width="7" height="7" rx="1"/>
-            <rect x="3" y="14" width="7" height="7" rx="1"/>
-            <rect x="14" y="14" width="7" height="7" rx="1"/>
-          </svg>
+    <!-- Categories -->
+    <section class="max-w-7xl mx-auto px-lg md:px-3xl py-4xl" aria-labelledby="cat-title">
+      <div class="flex items-end justify-between gap-lg mb-2xl">
+        <h2 id="cat-title" class="text-2xl font-semibold text-text-primary leading-snug">دسته‌بندی محصولات</h2>
+        <a href="shop.html" class="text-sm text-accent hover:text-primary transition-colors duration-150">مشاهده همه</a>
+      </div>
+      <div id="categories-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg"></div>
+    </section>
+
+    <!-- Newest -->
+    <section class="bg-bg-primary border-y border-border-light py-4xl" aria-labelledby="newest-title">
+      <div class="max-w-7xl mx-auto px-lg md:px-3xl">
+        <div class="flex items-end justify-between gap-lg mb-2xl">
+          <h2 id="newest-title" class="text-2xl font-semibold text-text-primary leading-snug">جدیدترین محصولات</h2>
+          <a href="shop.html?sort=newest" class="text-sm text-accent hover:text-primary transition-colors duration-150">مشاهده همه</a>
         </div>
-        <div class="slide__title">امکانات کلیدی</div>
-        <ul class="slide__feature-list">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-            تعریف مشاغل با نرخ اضافه‌کاری اختصاصی
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            ثبت ساعت شروع، پایان و تاریخ شمسی
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            محاسبه خودکار مبلغ و ساعات اضافه‌کاری
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            گزارش‌گیری ماهانه، هفتگی و روزانه
-          </li>
-        </ul>
+        <div id="newest-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-lg"></div>
       </div>
+    </section>
 
-      <!-- Slide 3: Ready -->
-      <div class="slide" id="slide-2">
-        <div class="slide__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-          </svg>
-        </div>
-        <div class="slide__title">همه چیز آماده است</div>
-        <div class="slide__desc">
-          اکنون می‌توانید اولین شغل خود را تعریف کرده و<br>
-          ثبت اضافه‌کاری را شروع کنید.
-        </div>
+    <!-- Bestsellers -->
+    <section class="max-w-7xl mx-auto px-lg md:px-3xl py-4xl" aria-labelledby="best-title">
+      <div class="flex items-end justify-between gap-lg mb-2xl">
+        <h2 id="best-title" class="text-2xl font-semibold text-text-primary leading-snug">پرفروش‌ترین محصولات</h2>
+        <a href="shop.html?sort=bestseller" class="text-sm text-accent hover:text-primary transition-colors duration-150">مشاهده همه</a>
       </div>
+      <div id="bestseller-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-lg"></div>
+    </section>
 
-    </div>
+    <!-- Trust -->
+    <section class="bg-accent-soft py-4xl" aria-label="اعتماد">
+      <div class="max-w-7xl mx-auto px-lg md:px-3xl grid grid-cols-1 md:grid-cols-3 gap-3xl" id="trust-row"></div>
+    </section>
+  </main>
 
-    <!-- Dots -->
-    <div class="onboard__dots">
-      <button class="dot active" data-slide="0" aria-label="اسلاید ۱"></button>
-      <button class="dot" data-slide="1" aria-label="اسلاید ۲"></button>
-      <button class="dot" data-slide="2" aria-label="اسلاید ۳"></button>
-    </div>
+  <div id="site-footer"></div>
+  <div id="site-bottom-nav"></div>
 
-    <!-- Progress -->
-    <div class="progress-bar" style="width: 100%; max-width: 400px;">
-      <div class="progress-bar__fill" id="onboard-progress" style="width: 33.33%;"></div>
-    </div>
-
-    <!-- Actions -->
-    <div class="onboard__actions">
-      <button class="btn btn--primary" id="btn-next">بعدی</button>
-      <button class="btn btn--ghost" id="btn-skip">رد کردن</button>
-    </div>
-  </div>
-</div>
-
-<!-- ===== HOME PAGE ===== -->
-<div id="page-home" class="page">
-  <div class="container">
-    
-    <!-- Header -->
-    <div class="page-header">
-      <div>
-        <div class="logo">
-          <div class="logo__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <div class="logo__text">اضافه<span>کار</span></div>
-        </div>
-        <div class="page-header__sub" id="current-month-display">فروردین ۱۴۰۵</div>
-      </div>
-      <button class="btn--icon" id="btn-add-record" aria-label="افزودن رکورد">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="12" y1="5" x2="12" y2="19"/>
-          <line x1="5" y1="12" x2="19" y2="12"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Month Selector -->
-    <div class="month-selector" style="margin-bottom: var(--space-lg);">
-      <button class="month-selector__btn" id="btn-prev-month" aria-label="ماه قبل">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
-      </button>
-      <div class="month-selector__label" id="month-label">فروردین ۱۴۰۵</div>
-      <button class="month-selector__btn" id="btn-next-month" aria-label="ماه بعد">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Stats -->
-    <div class="stats-grid" style="margin-bottom: var(--space-xl);">
-      <div class="stat-card stat-card--accent">
-        <div class="stat-card__label">مجموع مبلغ</div>
-        <div class="stat-card__value" id="stat-total-amount">۰</div>
-               <div class="stat-card__unit">تومان</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-card__label">ساعات اضافه‌کاری</div>
-        <div class="stat-card__value" id="stat-total-hours">۰</div>
-        <div class="stat-card__unit">ساعت</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-card__label">تعداد روزها</div>
-        <div class="stat-card__value" id="stat-days">۰</div>
-        <div class="stat-card__unit">روز</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-card__label">میانگین روزانه</div>
-        <div class="stat-card__value" id="stat-avg">۰</div>
-        <div class="stat-card__unit">تومان</div>
-      </div>
-    </div>
-
-    <!-- Filters -->
-    <div class="filter-tabs" style="margin-bottom: var(--space-lg);">
-      <button class="filter-tab active" data-filter="daily">روزانه</button>
-      <button class="filter-tab" data-filter="weekly">هفتگی</button>
-      <button class="filter-tab" data-filter="monthly">ماهانه</button>
-    </div>
-
-    <!-- Records -->
-    <div>
-      <div class="section-title">ثبت‌های اضافه‌کاری</div>
-      <div class="record-list" id="record-list"></div>
-
-      <div class="empty-state" id="empty-state">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <div class="empty-state__title">هیچ رکوردی ثبت نشده</div>
-        <div class="empty-state__desc">برای شروع دکمه افزودن را بزنید</div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== JOB PAGE ===== -->
-<div id="page-jobs" class="page">
-  <div class="container">
-
-    <div class="page-header">
-      <div>
-        <div class="page-header__title">مدیریت مشاغل</div>
-        <div class="page-header__sub">نرخ اضافه‌کاری هر شغل</div>
-      </div>
-      <button class="btn btn--primary btn--sm" id="btn-add-job">افزودن</button>
-    </div>
-
-    <div class="job-list" id="job-list"></div>
-
-  </div>
-</div>
-
-<!-- ===== REPORT PAGE ===== -->
-<div id="page-report" class="page">
-  <div class="container">
-
-    <div class="page-header">
-      <div>
-        <div class="page-header__title">گزارش ماهانه</div>
-        <div class="page-header__sub">خلاصه عملکرد</div>
-      </div>
-    </div>
-
-    <div class="report-summary" id="report-summary"></div>
-
-  </div>
-</div>
-
-<!-- ===== ADD RECORD MODAL ===== -->
-<div class="modal-overlay" id="modal-record">
-  <div class="modal">
-
-    <div class="modal__handle"></div>
-    <div class="modal__title">ثبت اضافه‌کاری</div>
-
-    <div class="form-stack">
-
-      <div class="form-group">
-        <label>شغل</label>
-        <select id="record-job"></select>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>ساعت شروع</label>
-          <input type="time" id="start-time">
-        </div>
-
-        <div class="form-group">
-          <label>ساعت پایان</label>
-          <input type="time" id="end-time">
-        </div>
-
-        <div class="form-group">
-          <label>تاریخ</label>
-          <input type="date" id="record-date">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>مبلغ هر ساعت (تومان)</label>
-        <input type="number" id="hourly-rate">
-      </div>
-
-      <button class="btn btn--primary" id="save-record">ثبت</button>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== ADD JOB MODAL ===== -->
-<div class="modal-overlay" id="modal-job">
-  <div class="modal">
-
-    <div class="modal__handle"></div>
-    <div class="modal__title">شغل جدید</div>
-
-    <div class="form-stack">
-
-      <div class="form-group">
-        <label>نام شغل</label>
-        <input type="text" id="job-name">
-      </div>
-
-      <div class="form-group">
-        <label>مبلغ اضافه‌کاری (تومان)</label>
-        <input type="number" id="job-rate">
-      </div>
-
-      <button class="btn btn--primary" id="save-job">ذخیره</button>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== BOTTOM NAV ===== -->
-<div class="bottom-nav">
-
-  <button class="nav-item active" data-page="home">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-      <path d="M3 10l9-7 9 7v11H3z"/>
-    </svg>
-    خانه
-  </button>
-
-  <button class="nav-item" data-page="jobs">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-      <rect x="3" y="7" width="18" height="13"/>
-      <path d="M16 3v4M8 3v4"/>
-    </svg>
-    مشاغل
-  </button>
-
-  <button class="nav-item" data-page="report">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-      <line x1="18" y1="20" x2="18" y2="10"/>
-      <line x1="12" y1="20" x2="12" y2="4"/>
-      <line x1="6" y1="20" x2="6" y2="14"/>
-    </svg>
-    گزارش
-  </button>
-
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script src="script.js"></script>
-
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

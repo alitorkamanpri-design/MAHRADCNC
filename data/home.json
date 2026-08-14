@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "brand": "MahradCNC",
+    "headline": "قطعات دقیق CNC برای تولید حرفه‌ای",
+    "subtitle": "ریل، واگن، اسپیندل و کنترلر — اصالت کالا و ارسال سریع به سراسر کشور",
+    "ctaPrimary": { "label": "مشاهده فروشگاه", "href": "shop.html" },
+    "ctaSecondary": { "label": "مشاوره تخصصی", "href": "tel:02133980931" },
+    "image": "img/18.png"
+  },
+  "trust": [
+    { "icon": "fa-solid fa-shield-halved", "title": "اصالت کالا", "text": "قطعات اورجینال وارداتی با گارانتی" },
+    { "icon": "fa-solid fa-truck-fast", "title": "ارسال سریع", "text": "ارسال به سراسر ایران در کوتاه‌ترین زمان" },
+    { "icon": "fa-solid fa-headset", "title": "پشتیبانی فنی", "text": "مشاوره انتخاب قطعه توسط متخصصان" }
+  ],
+  "sections": {
+    "newestTitle": "جدیدترین محصولات",
+    "bestsellersTitle": "پرفروش‌ترین محصولات",
+    "categoriesTitle": "دسته‌بندی محصولات"
+  },
+  "contact": {
+    "phones": ["021-33980931", "021-33532602"],
+    "address": "تهران — خیابان سعدی جنوبی، چهارراه اکباتان"
+  }
+}

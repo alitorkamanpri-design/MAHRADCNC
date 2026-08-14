@@ -1,0 +1,19 @@
+{
+  "kits": [
+    {
+      "id": "kit-rail-20",
+      "name": "ست محور ریل ۲۰",
+      "productIds": ["p-03", "p-06", "p-08", "p-17"]
+    },
+    {
+      "id": "kit-stepper",
+      "name": "ست استپ و درایو",
+      "productIds": ["p-18", "p-19", "p-17"]
+    },
+    {
+      "id": "kit-ballscrew-16",
+      "name": "ست بال اسکرو ۱۶",
+      "productIds": ["p-08", "p-09", "p-32", "p-11"]
+    }
+  ]
+}

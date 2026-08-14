@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "brand": "MahradCNC",
+    "headline": "تأمین مطمئن قطعات صنعتی CNC",
+    "subtitle": "از ریل خطی تا اسپیندل و کنترلر — همه چیز برای راه‌اندازی و نگهداری دستگاه شما",
+    "ctaPrimary": { "label": "ورود به فروشگاه", "href": "shop.html" },
+    "ctaSecondary": { "label": "تماس با ما", "href": "tel:02133980931" },
+    "image": "img/7.png"
+  },
+  "features": [
+    {
+      "icon": "fa-solid fa-industry",
+      "title": "کاتالوگ صنعتی دقیق",
+      "text": "جستجو با SKU و فیلتر مشخصات فنی برای انتخاب سریع قطعه"
+    },
+    {
+      "icon": "fa-solid fa-certificate",
+      "title": "کیفیت و اصالت",
+      "text": "برندهای معتبر وارداتی با مشخصات فنی شفاف و کد مدل دقیق"
+    },
+    {
+      "icon": "fa-solid fa-comments",
+      "title": "مشاوره قبل از خرید",
+      "text": "استعلام واتساپی برای قطعات گران و پروژه‌های B2B"
+    }
+  ],
+  "stats": [
+    { "value": "۱۵+", "label": "سال تجربه صنعتی", "dynamic": false },
+    { "value": "auto-products", "label": "مدل در کاتالوگ فعال", "dynamic": "products" },
+    { "value": "auto-cats", "label": "دسته تخصصی", "dynamic": "categories" }
+  ],
+  "featuredProductIds": ["p-01", "p-05", "p-12", "p-18"],
+  "caseStudies": [
+    {
+      "title": "تجهیز محور خطی کارگاه فرز",
+      "text": "تأمین ریل HGR20، واگن و بال اسکرو برای نوسازی محور X/Y یک کارگاه در تهران."
+    },
+    {
+      "title": "ارتقا درایو و استپ موتور",
+      "text": "جایگزینی استپ‌موتور و درایو TB6600 برای پایداری حرکت در دستگاه حکاکی."
+    }
+  ],
+  "ctaBanner": {
+    "title": "آماده تجهیز خط تولید هستید؟",
+    "text": "کاتالوگ را ببینید یا درخواست قیمت چندخطی ارسال کنید.",
+    "button": { "label": "مشاهده محصولات", "href": "shop.html" },
+    "secondary": { "label": "درخواست قیمت", "href": "rfq.html" }
+  }
+}

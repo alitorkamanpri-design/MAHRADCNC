@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "p-01",
+    "slug": "rail-wagon-hgh45ca",
+    "name": "واگن و ریل خطی HGH45CA",
+    "sku": "HGH45CA-2006-00100",
+    "categoryId": "mechanical-rail",
+    "price": 8450000,
+    "compareAtPrice": null,
+    "stock": 14,
+    "image": "img/1.png",
+    "gallery": [
+      "img/1.png",
+      "img/18.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGH",
+      "سایز": "45",
+      "نوع": "بدون لبه"
+    },
+    "shortDesc": "واگن خطی سنگین مناسب محورهای CNC صنعتی",
+    "description": "واگن و ریل خطی سری HGH45 با دقت بالا برای ماشین‌های CNC سنگین. مناسب بارگذاری بالا و حرکت روان محور.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-02",
+    "slug": "rail-wagon-hgw25",
+    "name": "واگن خطی لبه‌دار HGW25CC",
+    "sku": "HGW25CC-2204-00100",
+    "categoryId": "mechanical-rail",
+    "price": 1540500,
+    "compareAtPrice": 1750000,
+    "stock": 28,
+    "image": "img/18.png",
+    "gallery": [
+      "img/18.png",
+      "img/2.png"
+    ],
+    "badges": [
+      "sale"
+    ],
+    "isNew": true,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGW",
+      "سایز": "25",
+      "نوع": "لبه‌دار"
+    },
+    "shortDesc": "واگن لبه‌دار سایز ۲۵ برای ریل خطی CNC",
+    "description": "واگن HGW25CC با کپ‌های مشکی و نقطه روغن‌کاری، مناسب محورهای متوسط.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-03",
+    "slug": "rail-hgr20-400",
+    "name": "ریل خطی HGR20 طول ۴۰۰ سانتی‌متر",
+    "sku": "HGR20-400CM",
+    "categoryId": "mechanical-rail",
+    "price": 2223000,
+    "compareAtPrice": null,
+    "stock": 20,
+    "image": "img/3.png",
+    "gallery": [
+      "img/3.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGR",
+      "سایز": "20",
+      "طول": "400cm"
+    },
+    "shortDesc": "ریل خطی سایز ۲۰ چهار متری",
+    "description": "ریل خطی دقیق HGR20 برای نصب واگن‌های سری HG.",
+    "brand": "HQM",
+    "unit": "متر",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-04",
+    "slug": "rail-hgr15-400",
+    "name": "ریل خطی HGR15 طول ۴۰۰ سانتی‌متر",
+    "sku": "HGR15-400CM",
+    "categoryId": "mechanical-rail",
+    "price": 1948100,
+    "compareAtPrice": null,
+    "stock": 18,
+    "image": "img/4.png",
+    "gallery": [
+      "img/4.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGR",
+      "سایز": "15",
+      "طول": "400cm"
+    },
+    "shortDesc": "ریل خطی سبک سایز ۱۵",
+    "description": "ریل HGR15 مناسب دستگاه‌های رومیزی و محورهای سبک.",
+    "brand": "HQM",
+    "unit": "متر",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-05",
+    "slug": "wagon-hgh15",
+    "name": "واگن بدون لبه HGH15",
+    "sku": "HGH15-HQM",
+    "categoryId": "mechanical-rail",
+    "price": 1053000,
+    "compareAtPrice": null,
+    "stock": 35,
+    "image": "img/5.png",
+    "gallery": [
+      "img/5.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGH",
+      "سایز": "15",
+      "نوع": "بدون لبه"
+    },
+    "shortDesc": "واگن پرفروش سایز ۱۵",
+    "description": "واگن HGH15 بدون لبه، انتخاب محبوب برای ریل ۱۵.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-06",
+    "slug": "wagon-hgw20",
+    "name": "واگن لبه‌دار HGW20",
+    "sku": "HGW20-HQM",
+    "categoryId": "mechanical-rail",
+    "price": 1150500,
+    "compareAtPrice": null,
+    "stock": 22,
+    "image": "img/6.png",
+    "gallery": [
+      "img/6.png"
+    ],
+    "badges": [],
+    "isNew": true,
+    "isBestseller": true,
+    "specs": {
+      "سری": "HGW",
+      "سایز": "20",
+      "نوع": "لبه‌دار"
+    },
+    "shortDesc": "واگن لبه‌دار سایز ۲۰",
+    "description": "واگن HGW20 با پایداری جانبی بالا.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-07",
+    "slug": "wagon-hgw30",
+    "name": "واگن لبه‌دار HGW30",
+    "sku": "HGW30-HQM",
+    "categoryId": "mechanical-rail",
+    "price": 1911000,
+    "compareAtPrice": null,
+    "stock": 10,
+    "image": "img/7.png",
+    "gallery": [
+      "img/7.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "سری": "HGW",
+      "سایز": "30",
+      "نوع": "لبه‌دار"
+    },
+    "shortDesc": "واگن سنگین سایز ۳۰",
+    "description": "مناسب محورهای با بار متوسط تا سنگین.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-08",
+    "slug": "ballscrew-sfu1605",
+    "name": "پیچ بال اسکرو SFU16 گام ۵",
+    "sku": "SFU-16-05-4M",
+    "categoryId": "mechanical-ballscrew",
+    "price": 2254200,
+    "compareAtPrice": null,
+    "stock": 16,
+    "image": "img/8.png",
+    "gallery": [
+      "img/8.png",
+      "img/9.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "قطر": "16mm",
+      "گام": "5mm",
+      "طول": "4m"
+    },
+    "shortDesc": "بال اسکرو ۱۶ گام ۵ چهار متری",
+    "description": "پیچ بال اسکرو دقیق برای محورهای خطی CNC.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-09",
+    "slug": "nut-sfu1605-t4",
+    "name": "مهره بال اسکرو SFU16-05-T4",
+    "sku": "SFU-16-05-T4",
+    "categoryId": "mechanical-ballscrew",
+    "price": 2558400,
+    "compareAtPrice": null,
+    "stock": 15,
+    "image": "img/9.png",
+    "gallery": [
+      "img/9.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "قطر": "16mm",
+      "گام": "5mm",
+      "نوع": "T4"
+    },
+    "shortDesc": "مهره بال اسکرو سایز ۱۶",
+    "description": "مهره سازگار با پیچ SFU16 گام ۵.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-10",
+    "slug": "ballscrew-sfu2005",
+    "name": "پیچ بال اسکرو SFU20 گام ۵",
+    "sku": "SFU-20-05-4M",
+    "categoryId": "mechanical-ballscrew",
+    "price": 2802200,
+    "compareAtPrice": null,
+    "stock": 12,
+    "image": "img/10.png",
+    "gallery": [
+      "img/10.png"
+    ],
+    "badges": [],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "20mm",
+      "گام": "5mm",
+      "طول": "4m"
+    },
+    "shortDesc": "بال اسکرو ۲۰ گام ۵",
+    "description": "برای محورهای با گشتاور بالاتر.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-11",
+    "slug": "support-fk12",
+    "name": "یاتاقان ابتدای بال اسکرو FK12",
+    "sku": "FK12-HQM",
+    "categoryId": "mechanical-ballscrew",
+    "price": 4492800,
+    "compareAtPrice": null,
+    "stock": 8,
+    "image": "img/11.png",
+    "gallery": [
+      "img/11.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "مدل": "FK12",
+      "نوع": "نگهدارنده ابتدا"
+    },
+    "shortDesc": "ساپورت ابتدای پیچ بال اسکرو",
+    "description": "یاتاقان FK12 برای نگه‌داری ابتدای بال اسکرو.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-12",
+    "slug": "bearing-lme10",
+    "name": "بلبرینگ شفت LME10",
+    "sku": "LME10-HQM",
+    "categoryId": "mechanical-bearing",
+    "price": 214500,
+    "compareAtPrice": 250000,
+    "stock": 40,
+    "image": "img/12.png",
+    "gallery": [
+      "img/12.png"
+    ],
+    "badges": [
+      "sale"
+    ],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "10mm",
+      "مدل": "LME10"
+    },
+    "shortDesc": "بلبرینگ شفت قطر ۱۰ میلی‌متر",
+    "description": "بلبرینگ خطی شفت اورجینال وارداتی.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-13",
+    "slug": "bearing-lme6",
+    "name": "بلبرینگ شفت LME6",
+    "sku": "LME6-HQM",
+    "categoryId": "mechanical-bearing",
+    "price": 175500,
+    "compareAtPrice": null,
+    "stock": 50,
+    "image": "img/13.png",
+    "gallery": [
+      "img/13.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "6mm",
+      "مدل": "LME6"
+    },
+    "shortDesc": "بلبرینگ شفت قطر ۶ میلی‌متر",
+    "description": "مناسب شفت‌های نازک و محورهای سبک.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-14",
+    "slug": "bearing-sbr12uu",
+    "name": "بلبرینگ خطی بلوکی SBR12UU",
+    "sku": "SBR12UU-HQM",
+    "categoryId": "mechanical-bearing",
+    "price": 540200,
+    "compareAtPrice": null,
+    "stock": 25,
+    "image": "img/14.png",
+    "gallery": [
+      "img/14.png"
+    ],
+    "badges": [],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "12mm",
+      "مدل": "SBR12UU"
+    },
+    "shortDesc": "واگن بلوکی شیاردار بدون لبه",
+    "description": "بلبرینگ خطی بلوکی برای شفت SBR.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-15",
+    "slug": "shaft-sf12",
+    "name": "شفت خام هاردکروم SF12",
+    "sku": "SF12-400CM",
+    "categoryId": "mechanical-bearing",
+    "price": 1495700,
+    "compareAtPrice": null,
+    "stock": 14,
+    "image": "img/15.png",
+    "gallery": [
+      "img/15.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "قطر": "12mm",
+      "طول": "400cm",
+      "نوع": "خام"
+    },
+    "shortDesc": "شفت هاردکروم قطر ۱۲",
+    "description": "شفت دقیق برای بلبرینگ‌های خطی.",
+    "brand": "HQM",
+    "unit": "متر",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-16",
+    "slug": "shaft-sbs16",
+    "name": "شفت پایه‌دار SBS16",
+    "sku": "SBS16-400CM",
+    "categoryId": "mechanical-bearing",
+    "price": 2691000,
+    "compareAtPrice": null,
+    "stock": 9,
+    "image": "img/16.png",
+    "gallery": [
+      "img/16.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "16mm",
+      "طول": "400cm",
+      "نوع": "پایه‌دار"
+    },
+    "shortDesc": "شفت پایه‌دار قطر ۱۶",
+    "description": "شفت با پایه نصب برای محورهای باز.",
+    "brand": "HQM",
+    "unit": "متر",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-17",
+    "slug": "coupling-srj30",
+    "name": "کوپلینگ لاستیکی SRJ30",
+    "sku": "SRJ30-HQM",
+    "categoryId": "accessories",
+    "price": 1136900,
+    "compareAtPrice": null,
+    "stock": 30,
+    "image": "img/17.png",
+    "gallery": [
+      "img/17.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "قطر": "30mm",
+      "شفت": "6mm",
+      "نوع": "لاستیکی"
+    },
+    "shortDesc": "کوپلینگ شفت ورودی/خروجی ۶",
+    "description": "کوپلینگ انعطاف‌پذیر برای اتصال موتور به پیچ.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-18",
+    "slug": "stepper-57hs22",
+    "name": "استپ موتور ۵۷HS22 نمـا ۲۳",
+    "sku": "57HS22-HQM",
+    "categoryId": "electronic-stepper",
+    "price": 3510000,
+    "compareAtPrice": null,
+    "stock": 20,
+    "image": "img/28.png",
+    "gallery": [
+      "img/28.png",
+      "img/29.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "گشتاور": "2.2 N.m",
+      "نما": "NEMA 23",
+      "فاز": "2ph",
+      "برند": "HQM"
+    },
+    "shortDesc": "استپ موتور ۲۲ کیلوگرم سانتی‌متر",
+    "description": "استپ موتور دو فاز مناسب محورهای متوسط CNC.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-19",
+    "slug": "driver-tb6600",
+    "name": "استپ درایو TB6600 پنج آمپر",
+    "sku": "TB6600-HQM",
+    "categoryId": "electronic-stepper",
+    "price": 2039700,
+    "compareAtPrice": null,
+    "stock": 18,
+    "image": "img/29.png",
+    "gallery": [
+      "img/29.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "جریان": "5A",
+      "فاز": "2ph",
+      "بدنه": "فلزی",
+      "برند": "HQM"
+    },
+    "shortDesc": "درایو فلزی موتورهای ۴ تا ۲۲ کیلوگرم",
+    "description": "استپ درایو TB6600 با بدنه فلزی خنک‌شونده.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-20",
+    "slug": "driver-dma860h",
+    "name": "استپ درایو DMA860H شش آمپر",
+    "sku": "DMA860H-HQM",
+    "categoryId": "electronic-stepper",
+    "price": 7495800,
+    "compareAtPrice": null,
+    "stock": 7,
+    "image": "img/30.png",
+    "gallery": [
+      "img/30.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "جریان": "6A",
+      "ولتاژ": "24-80V",
+      "فاز": "2ph",
+      "برند": "HQM"
+    },
+    "shortDesc": "درایو موتورهای ۴۵ تا ۱۵۰ کیلوگرم",
+    "description": "درایو قدرتمند برای استپ موتورهای بزرگ.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-21",
+    "slug": "stepper-86hss65",
+    "name": "استپ موتور انکودردار 86HSS65",
+    "sku": "86HSS65-E",
+    "categoryId": "electronic-stepper",
+    "price": 12571700,
+    "compareAtPrice": null,
+    "stock": 5,
+    "image": "img/31.png",
+    "gallery": [
+      "img/31.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "گشتاور": "6.5 N.m",
+      "نما": "NEMA 34",
+      "انکودر": "دارد",
+      "برند": "HQM"
+    },
+    "shortDesc": "ایزی سروو انکودردار ۶۵ کیلوگرم",
+    "description": "استپ موتور انکودردار برای کنترل دقیق موقعیت.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-22",
+    "slug": "spindle-deci-15",
+    "name": "اسپیندل DECI 1.5 کیلووات ۶۰۰۰۰ دور",
+    "sku": "DC-60B-1.5KW",
+    "categoryId": "electronic-spindle",
+    "price": 290123000,
+    "compareAtPrice": null,
+    "stock": 3,
+    "image": "img/25.png",
+    "gallery": [
+      "img/25.png",
+      "img/26.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "توان": "1.5kW",
+      "دور": "60000rpm",
+      "برند": "DECI"
+    },
+    "shortDesc": "اسپیندل دندانپزشکی/دقیق DECI",
+    "description": "اسپیندل پرسرعت برای کاربردهای دقیق و ظریف.",
+    "brand": "DECI",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 7,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-23",
+    "slug": "spindle-45kw",
+    "name": "اسپیندل موتور ۴.۵ کیلووات",
+    "sku": "SP-4.5KW-HQM",
+    "categoryId": "electronic-spindle",
+    "price": 48500000,
+    "compareAtPrice": 52000000,
+    "stock": 6,
+    "image": "img/26.png",
+    "gallery": [
+      "img/26.png"
+    ],
+    "badges": [
+      "sale"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "توان": "4.5kW",
+      "خنک‌کاری": "آب‌خنک",
+      "برند": "HQM"
+    },
+    "shortDesc": "اسپیندل صنعتی ۴.۵ کیلووات",
+    "description": "مناسب فرز و حکاکی صنعتی متوسط.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-24",
+    "slug": "spindle-6kw",
+    "name": "اسپیندل موتور ۶ کیلووات",
+    "sku": "SP-6KW-HQM",
+    "categoryId": "electronic-spindle",
+    "price": 62000000,
+    "compareAtPrice": null,
+    "stock": 4,
+    "image": "img/27.png",
+    "gallery": [
+      "img/27.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "توان": "6kW",
+      "خنک‌کاری": "آب‌خنک",
+      "برند": "HQM"
+    },
+    "shortDesc": "اسپیندل قدرتمند ۶ کیلووات",
+    "description": "برای برش و فرز سنگین مواد سخت.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 7,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-25",
+    "slug": "controller-fscut-2000c",
+    "name": "کنترلر فایبر لیزر FSCUT 2000C",
+    "sku": "FSCUT-2000C",
+    "categoryId": "electronic-controller",
+    "price": 596471900,
+    "compareAtPrice": null,
+    "stock": 0,
+    "image": "img/32.png",
+    "gallery": [
+      "img/32.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "مدل": "FSCUT 2000C",
+      "کاربرد": "برش فایبر",
+      "برند": "INVT"
+    },
+    "shortDesc": "کنترلر دستگاه برش فایبر لیزر",
+    "description": "کنترلر حرفه‌ای برای سیستم‌های برش فایبر.",
+    "brand": "INVT",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 14,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-26",
+    "slug": "inverter-invt-22",
+    "name": "اینورتر ۲.۲ کیلووات INVT",
+    "sku": "GD20-2R2G-4",
+    "categoryId": "electronic-controller",
+    "price": 38608100,
+    "compareAtPrice": null,
+    "stock": 8,
+    "image": "img/33.png",
+    "gallery": [
+      "img/33.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "توان": "2.2kW",
+      "ولتاژ": "380V",
+      "فاز": "سه‌فاز",
+      "برند": "INVT"
+    },
+    "shortDesc": "اینورتر ۵.۵ آمپر ۳۸۰ ولت",
+    "description": "اینورتر INVT برای کنترل دور اسپیندل و موتور.",
+    "brand": "INVT",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-27",
+    "slug": "servo-invt-1kw",
+    "name": "سروو موتور ۱ کیلووات INVT",
+    "sku": "IMS20B-13M10C20C",
+    "categoryId": "electronic-stepper",
+    "price": 92453400,
+    "compareAtPrice": null,
+    "stock": 5,
+    "image": "img/34.png",
+    "gallery": [
+      "img/34.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "توان": "1kW",
+      "دور": "2000rpm",
+      "برند": "INVT"
+    },
+    "shortDesc": "سروو موتور یک کیلووات",
+    "description": "سروو موتور دقیق با درایو سازگار INVT.",
+    "brand": "INVT",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 7,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-28",
+    "slug": "energy-chain-35x60",
+    "name": "انرژی چین ۳۵×۶۰ FKS",
+    "sku": "FKS-R75-35x60",
+    "categoryId": "accessories",
+    "price": 1889600,
+    "compareAtPrice": null,
+    "stock": 20,
+    "image": "img/35.png",
+    "gallery": [
+      "img/35.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "داخلی": "60×35",
+      "خارجی": "80×50",
+      "مدل": "R75"
+    },
+    "shortDesc": "محافظ کابل انرژی چین",
+    "description": "انرژی گاید برای محافظت کابل‌های متحرک محور.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-29",
+    "slug": "handwheel-tosoku-5axis",
+    "name": "هندویل پنج محور TOSOKU",
+    "sku": "TOSOKU-5AXIS-5V",
+    "categoryId": "accessories",
+    "price": 7218900,
+    "compareAtPrice": null,
+    "stock": 6,
+    "image": "img/36.png",
+    "gallery": [
+      "img/36.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "محور": "5",
+      "ولتاژ": "5V",
+      "برند": "TOSOKU"
+    },
+    "shortDesc": "هندویل CNC پنج محور با سیم",
+    "description": "هندویل دستی برای کنترل دستی محورهای دستگاه.",
+    "brand": "TOSOKU",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-30",
+    "slug": "gearbox-le70-008",
+    "name": "گیربکس خورشیدی LE70 نسبت ۱ به ۸",
+    "sku": "LE70-008-14",
+    "categoryId": "mechanical-gearbox",
+    "price": 12873900,
+    "compareAtPrice": null,
+    "stock": 7,
+    "image": "img/20.png",
+    "gallery": [
+      "img/20.png",
+      "img/21.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "سایز": "70",
+      "نسبت": "1:8",
+      "شفت ورودی": "14mm"
+    },
+    "shortDesc": "گیربکس سیاره‌ای مناسب ۴۰۰ وات",
+    "description": "گیربکس خورشیدی برای سرووموتور ۴۰۰ وات ۳۰۰۰ دور.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-31",
+    "slug": "gearbox-lb160-007",
+    "name": "گیربکس خورشیدی LB160 نسبت ۱ به ۷",
+    "sku": "LB160-007-42",
+    "categoryId": "mechanical-gearbox",
+    "price": 93600000,
+    "compareAtPrice": null,
+    "stock": 0,
+    "image": "img/21.png",
+    "gallery": [
+      "img/21.png"
+    ],
+    "badges": [
+      "new"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "سایز": "180",
+      "نسبت": "1:7",
+      "توان": "7.5kW"
+    },
+    "shortDesc": "گیربکس سنگین مناسب ۷.۵ کیلووات",
+    "description": "گیربکس صنعتی برای سرووهای پرتوان.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 14,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-32",
+    "slug": "nut-support-dsg16",
+    "name": "ساپورت مهره بال اسکرو DSG16",
+    "sku": "DSG-16",
+    "categoryId": "mechanical-ballscrew",
+    "price": 1148600,
+    "compareAtPrice": null,
+    "stock": 11,
+    "image": "img/22.png",
+    "gallery": [
+      "img/22.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "سایز": "16",
+      "نوع": "ساپورت مهره"
+    },
+    "shortDesc": "نگهدارنده مهره بال اسکرو ۱۶",
+    "description": "ساپورت مهره برای نصب پایدار روی محور.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-33",
+    "slug": "slipring-a2s",
+    "name": "اسلیپ رینگ ۲ پل Asiantool",
+    "sku": "A2S-2",
+    "categoryId": "accessories",
+    "price": 7068800,
+    "compareAtPrice": null,
+    "stock": 9,
+    "image": "img/37.png",
+    "gallery": [
+      "img/37.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "پل": "2",
+      "برند": "Asiantool",
+      "ساخت": "تایوان"
+    },
+    "shortDesc": "روتاری کانکتور ۲ پل",
+    "description": "اسلیپ رینگ برای انتقال سیگنال در محورهای دوار.",
+    "brand": "Asiantool",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-34",
+    "slug": "tnut-standard",
+    "name": "تی‌نات (T-Nut) استاندارد",
+    "sku": "TNUT-STD",
+    "categoryId": "accessories",
+    "price": 27300,
+    "compareAtPrice": null,
+    "stock": 200,
+    "image": "img/38.png",
+    "gallery": [
+      "img/38.png"
+    ],
+    "badges": [
+      "bestseller"
+    ],
+    "isNew": false,
+    "isBestseller": true,
+    "specs": {
+      "نوع": "T-Nut",
+      "کاربرد": "پروفیل آلومینیوم"
+    },
+    "shortDesc": "مهره تی برای پروفیل آلومینیوم",
+    "description": "تی‌نات استاندارد برای مونتاژ فریم‌های آلومینیومی.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-35",
+    "slug": "support-shf6",
+    "name": "ساپورت شفت هاردکروم SHF6",
+    "sku": "SHF6-HQM",
+    "categoryId": "mechanical-bearing",
+    "price": 195000,
+    "compareAtPrice": null,
+    "stock": 45,
+    "image": "img/19.png",
+    "gallery": [
+      "img/19.png"
+    ],
+    "badges": [],
+    "isNew": false,
+    "isBestseller": false,
+    "specs": {
+      "قطر": "6mm",
+      "مدل": "SHF6"
+    },
+    "shortDesc": "ساپورت شفت قطر ۶",
+    "description": "نگهدارنده شفت هاردکروم سایز ۶.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  },
+  {
+    "id": "p-36",
+    "slug": "ff10-support",
+    "name": "یاتاقان انتهای بال اسکرو FF10",
+    "sku": "FF10-HQM",
+    "categoryId": "mechanical-ballscrew",
+    "price": 1228500,
+    "compareAtPrice": null,
+    "stock": 13,
+    "image": "img/23.png",
+    "gallery": [
+      "img/23.png"
+    ],
+    "badges": [],
+    "isNew": true,
+    "isBestseller": false,
+    "specs": {
+      "مدل": "FF10",
+      "نوع": "نگهدارنده انتها"
+    },
+    "shortDesc": "ساپورت انتهای پیچ بال اسکرو",
+    "description": "یاتاقان FF10 برای انتهای آزاد بال اسکرو.",
+    "brand": "HQM",
+    "unit": "عدد",
+    "moq": 1,
+    "leadTimeDays": 3,
+    "datasheetUrl": null
+  }
+]
