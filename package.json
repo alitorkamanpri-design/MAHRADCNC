@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/copy-static.mjs",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx --yes gh-pages -d dist -b gh-pages"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.0",
